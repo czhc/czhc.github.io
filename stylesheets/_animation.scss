@@ -33,3 +33,112 @@
     -webkit-transform:translateY(0);
   }
 }
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes bounce {
+  0% {
+    -webkit-transform:translateY(-100%);
+  }
+  5% {
+    -webkit-transform:translateY(-100%);
+  }
+  15% {
+    -webkit-transform:translateY(0);
+  }
+  20% {
+    -webkit-transform:translateY(-10%);
+  }
+  25% {
+    -webkit-transform:translateY(0%);
+  }
+  30% {
+    -webkit-transform:translateY(-5%);
+  }
+  35% {
+    -webkit-transform:translateY(0%);
+  }
+  40% {
+    -webkit-transform:translateY(-2%);
+  }
+  45% {
+    -webkit-transform:translateY(0%);
+  }
+  50% {
+    -webkit-transform:translateY(0);
+  }
+  100% {
+    -webkit-transform:translateY(0);
+  }
+}
+/* Opera 12.0 */
+@-o-keyframes bounce {
+  0% {
+    -webkit-transform:translateY(-100%);
+  }
+  5% {
+    -webkit-transform:translateY(-100%);
+  }
+  15% {
+    -webkit-transform:translateY(0);
+  }
+  20% {
+    -webkit-transform:translateY(-10%);
+  }
+  25% {
+    -webkit-transform:translateY(0%);
+  }
+  30% {
+    -webkit-transform:translateY(-5%);
+  }
+  35% {
+    -webkit-transform:translateY(0%);
+  }
+  40% {
+    -webkit-transform:translateY(-2%);
+  }
+  45% {
+    -webkit-transform:translateY(0%);
+  }
+  50% {
+    -webkit-transform:translateY(0);
+  }
+  100% {
+    -webkit-transform:translateY(0);
+  }
+}
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes bounce {
+  0% {
+    -webkit-transform:translateY(-100%);
+  }
+  5% {
+    -webkit-transform:translateY(-100%);
+  }
+  15% {
+    -webkit-transform:translateY(0);
+  }
+  20% {
+    -webkit-transform:translateY(-10%);
+  }
+  25% {
+    -webkit-transform:translateY(0%);
+  }
+  30% {
+    -webkit-transform:translateY(-5%);
+  }
+  35% {
+    -webkit-transform:translateY(0%);
+  }
+  40% {
+    -webkit-transform:translateY(-2%);
+  }
+  45% {
+    -webkit-transform:translateY(0%);
+  }
+  50% {
+    -webkit-transform:translateY(0);
+  }
+  100% {
+    -webkit-transform:translateY(0);
+  }
+}
