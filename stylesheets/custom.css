@@ -1,0 +1,16 @@
+body {
+  font: 100% Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  color: #333; }
+
+.main-img {
+  margin: 75px auto 20px;
+  max-width: 400px;
+  border: 10px solid black; }
+
+h1 {
+  font: 100px Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  color: #fff;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+  -webkit-font-smoothing: antialiased; }
+
+/*# sourceMappingURL=custom.css.map */
