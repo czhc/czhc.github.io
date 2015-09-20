@@ -1,9 +1,9 @@
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   5% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   15% {
     -webkit-transform:translateY(0);
@@ -37,10 +37,10 @@
 /* Mozilla Firefox 15 below */
 @-moz-keyframes bounce {
   0% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   5% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   15% {
     -webkit-transform:translateY(0);
@@ -73,10 +73,10 @@
 /* Opera 12.0 */
 @-o-keyframes bounce {
   0% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   5% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   15% {
     -webkit-transform:translateY(0);
@@ -109,10 +109,10 @@
 /* W3, Opera 12+, Firefox 16+ */
 @keyframes bounce {
   0% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   5% {
-    -webkit-transform:translateY(-100%);
+    -webkit-transform:translateY(-150%);
   }
   15% {
     -webkit-transform:translateY(0);
