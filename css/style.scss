@@ -24,10 +24,10 @@ body {
     background: -webkit-linear-gradient(
       -27deg, 
       map-get($colors, gold) 0%,
-      map-get($colors, gold) 44%,
-      map-get($colors, white) 45%, 
-      map-get($colors, white) 54%, 
-      map-get($colors, gold) 55%,
+      map-get($colors, gold) 37%,
+      map-get($colors, white) 38%, 
+      map-get($colors, white) 59%, 
+      map-get($colors, gold) 60%,
       map-get($colors, gold) 100%
     );
     -webkit-background-clip: text;
@@ -38,6 +38,17 @@ body {
     padding: 15%;
     h1 {
       font-size: 100px;
+      background: -webkit-linear-gradient(
+        -27deg, 
+        map-get($colors, gold) 0%,
+        map-get($colors, gold) 44%,
+        map-get($colors, white) 45%, 
+        map-get($colors, white) 54%, 
+        map-get($colors, gold) 55%,
+        map-get($colors, gold) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
