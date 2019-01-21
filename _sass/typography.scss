@@ -1,0 +1,72 @@
+body,html{
+  font-size: $base-font-size;
+  font-family: $body-font;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: map-get($colors,white);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: $header-font;
+  font-weight: 400;
+  color: map-get($colors, white);
+}
+
+h1,.h1,%h1{
+  @include ms-respond(font-size, 6);
+}
+
+h2,.h2,%h2{
+  @include ms-respond(font-size, 5);
+}
+
+h3,.h3,%h3{;
+  @include ms-respond(font-size, 4);
+}
+
+h4,.h4,%h4{
+  @include ms-respond(font-size, 3);
+}
+
+h5,.h5,%h5{
+  @include ms-respond(font-size, 2);
+}
+
+h6,.h6,%h6{
+  @include ms-respond(font-size, 1);
+}
+
+p{
+  font-family: $body-font;
+  line-height: 1.7em;
+  font-size: 14px;
+  //@include ms-respond(font-size, 0);
+  @include media-breakpoint-down(sm) {
+    font-size: 16px
+  }
+}
+
+.text-small,%text-small{
+  @include ms-respond(font-size, -1);
+}
+
+.text-ssmall, %text-ssmall{
+  @include ms-respond(font-size, -2);
+}
+
+
+
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
