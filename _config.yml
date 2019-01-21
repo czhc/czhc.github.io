@@ -1,4 +1,6 @@
 theme: jekyll-theme-minimal
+title: czhc.io
+description: work in progress
 sass: 
   sass_dir: _sass
   style: compressed

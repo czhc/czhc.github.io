@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <title>czhc.io</title>
     <!-- Required meta tags always come first -->
@@ -7,23 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>czhc.github.io | czhc.io</title>
-<meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="czhc.github.io" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="work in progress" />
-<meta property="og:description" content="work in progress" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="czhc.io" />
-<script type="application/ld+json">
-{"url":"http://localhost:4000/","headline":"czhc.github.io","description":"work in progress","name":"czhc.io","@type":"WebSite","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
+    {% seo %}
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/style.css?v=7aa5280032b193f1e377f79f9ed3d7acd4f67721">
+    <link rel="stylesheet" href="{{ '/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Noto Sans"
     >
@@ -31,17 +18,17 @@
   </head>
   <body>
 <!--     <header>
-      <a href="http://github.com/pages/czhc/czhc.github.io"> 
+      <a href="{{ site.github.url }}"> 
         <h1>
-          <img src='https://d2h27eox9il2f2.cloudfront.net/kaodim-logo-medium-red@2x.png' alt=czhc.io />
+          <img src='https://d2h27eox9il2f2.cloudfront.net/kaodim-logo-medium-red@2x.png' alt={{ site.title | default: site.github.repository_name }} />
         </h1> 
       </a>
-      <p>work in progress</p>
+      <p>{{ site.description | default: site.github.project_tagline }}</p>
     </header>
  -->
     <section class="text-center align-middle sect--hero">
-      <h1>czhc.io</h1>  
-      <span>work in progress</span>
+      <h1>{{site.title | default: site.github.repository_name }}</h1>  
+      <span>{{ site.description | default: site.github.project_tagline }}</span>
       <footer>
         <ul class="list-inline"> 
           <li class="list-inline-item"><a class='github' href="https://www.github.com/czhc"><i class="fab fa-github"></i></a></li>
@@ -51,8 +38,7 @@
     </section>
 
 <!-- uncomment when restoring
-     <h1 id="czhcgithubio">czhc.github.io</h1>
-
+     {{ content }}
 
     <footer>
       <ul> 
