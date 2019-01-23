@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 title: czhc.io
 description: work in progress
+google_analytics: UA-133008676-1
 sass: 
   sass_dir: _sass
   style: compressed
