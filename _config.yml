@@ -7,3 +7,4 @@ google_analytics: UA-133008676-1
 sass: 
   sass_dir: _sass
   style: compressed
+permalink: /:categories/:year/:month/:day/:title
