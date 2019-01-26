@@ -1,5 +1,5 @@
-<ul>
+<ul class="list-inline list-unstyled">
   {% for tag in page.tags %}
-    <li><a href={{"/tags#"| append: tag}}>{{tag}}</a></li>
+    <li class="list-inline-item"><a href={{"/tags#"| append: tag}}>{{tag}}</a></li>
   {% endfor %}
 </ul>
