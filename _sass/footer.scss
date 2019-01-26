@@ -1,0 +1,8 @@
+footer a { 
+  color: map-get($colors, white); 
+  &:hover {
+    color: darken(map-get($colors, gold), 0%); 
+    text-decoration: none;
+  }
+}
+

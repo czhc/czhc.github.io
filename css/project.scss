@@ -6,6 +6,8 @@
 @import "settings";
 @import "typography";
 @import "monokai.css";
+@import "footer";
+
 
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
@@ -27,13 +29,14 @@ $footerHeight: 20vh;
   min-height: 100vh - $footerHeight;
 }
 
-a { 
+.tags > li > a  { 
   color: map-get($colors, gold); 
   &:hover {
     color: lighten(map-get($colors, gold), 10%); 
     text-decoration: none;
   }
 }
+
 
 li::before { 
   font-size: 0.5 * $font-size-base; 

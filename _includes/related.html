@@ -1,0 +1,17 @@
+<div class="related">
+    <h3>Related Posts</h3>
+    <ul>
+    {% assign firstCategory = page.categories | first %}
+    {% assign relatedCount = 0 %}    
+    {% for related in site.categories[firstCategory] %}
+        {% unless page.id == related.id %}
+          {% assign relatedCount = relatedCount | plus: 1 %}
+          <li><a href="{{related.url}}">{{ related.title }}</a></li>
+        {% endunless %}
+
+        {% if relatedCount == 3 %}
+          {% break %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
