@@ -10,7 +10,7 @@ body,html{
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
   font-family: $header-font;
-  font-weight: 400;
+  font-weight: 700;
   color: map-get($colors, white);
 }
 
@@ -41,7 +41,7 @@ h6,.h6,%h6{
 p{
   font-family: $body-font;
   line-height: 1.7em;
-  font-size: 14px;
+
   //@include ms-respond(font-size, 0);
   @include media-breakpoint-down(sm) {
     font-size: 16px
@@ -56,7 +56,9 @@ p{
   @include ms-respond(font-size, -2);
 }
 
-
+blockquote {
+  font-weight: 300;
+}
 
 
 // Alignment

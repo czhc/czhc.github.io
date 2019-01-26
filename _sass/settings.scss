@@ -4,12 +4,14 @@ $colors: (
   gold: #FFB949,
   green: #2C3931,
   white: #FEFBE8,
-  black: #090A02
+  grey: #888,
+  black: #111, 
 );
 
-$font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
-$header-font: 'Noto Sans', serif;
-$body-font: 'Noto Sans', serif;
+$font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;
+$header-font: $font-family;
+$body-font: $font-family;
 $base-font-size: 16px;
+$quote-font: $font-family;
 
 // $font-family:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
