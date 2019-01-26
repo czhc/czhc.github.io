@@ -14,11 +14,11 @@ body {
 
 .sect--hero {
   height: 100vh;
-  padding: 25%;
+  padding: 50% 25%;
   margin-bottom: 1em;
   h1 {
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 30px;
     margin-bottom: 0;
 
     background: -webkit-linear-gradient(
@@ -34,10 +34,27 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 80px;
+      background: -webkit-linear-gradient(
+        -27deg,
+        map-get($colors, gold) 0%,
+        map-get($colors, gold) 46%,
+        map-get($colors, white) 47%,
+        map-get($colors, white) 54%,
+        map-get($colors, gold) 55%,
+        map-get($colors, gold) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
   @include media-breakpoint-up(lg) { 
     padding: 15%;
     h1 {
-      font-size: 100px;
+      font-size: 80px;
       background: -webkit-linear-gradient(
         -27deg, 
         map-get($colors, gold) 0%,
@@ -69,7 +86,7 @@ footer {
 
 a { 
   color: map-get($colors, white); 
-  font-size: 1.5em;
+  font-size: $font-size-lg ;
   &:hover {
     color: darken(map-get($colors, gold), 0%); 
   }

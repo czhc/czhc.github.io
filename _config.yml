@@ -8,3 +8,29 @@ sass:
   sass_dir: _sass
   style: compressed
 permalink: /:categories/:year/:month/:day/:title
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  extensions: fenced_code_blocks
+defaults:
+  - scope: 
+      path: "_posts/projects"
+      type: posts
+    values:
+      permalink: projects/:title
+      category: projects
+  - scope:
+      path: "_posts/blog"
+      type: posts
+    values: 
+      permalink: blogs/:year/:month/:day/:title
+      category: blog
+#collections: 
+#  projects: 
+#    output: true
+#    permalink: /projects/:title

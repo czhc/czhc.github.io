@@ -1,0 +1,71 @@
+---
+---
+
+@import "modularscale";
+@import "bootstrap";
+@import "settings";
+@import "typography";
+@import "monokai.css";
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: $header-font;
+  font-weight: 700;
+  color: map-get($colors, blue);
+}
+
+body {
+  background-color: lighten(map-get($colors, white), 2%);
+  color: darken(map-get($colors, blue), 5%);
+  font-family: $font-family;
+}
+
+
+.content {
+  padding: 2em;
+}
+
+a { 
+  color: map-get($colors, gold); 
+  &:hover {
+    color: lighten(map-get($colors, gold), 10%); 
+  }
+}
+
+li::before { 
+  font-size: 0.5 * $font-size-base; 
+  color: red;
+}
+
+.center {
+  text-align: center;
+}
+
+blockquote {
+  margin: 0.5em 1em;
+  color: lighten(map-get($colors, blue), 10%);
+  font-size: 1.1em;
+  p { font-family: $quote-font; }
+
+/**
+  p::before {
+    content: "\"";
+  }
+  p::after {
+   content: "\"";
+  }
+**/
+}
+
+.highlight {
+  padding: 0.5em;
+}
+
+footer {
+  padding: 1em 2em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: map-get($colors, blue);
+  color: map-get($colors, white);
+}
