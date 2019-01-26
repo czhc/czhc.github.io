@@ -13,8 +13,11 @@ body {
   font-family: $font-family;
 }
 
+main {
+  padding: 20%;
+}
+
 .sect--hero {
-  height: 100vh;
   padding: 50% 25%;
   margin-bottom: 1em;
   h1 {
@@ -36,6 +39,7 @@ body {
   }
 
   @include media-breakpoint-up(md) {
+    padding: unset;
     h1 {
       font-size: 80px;
       background: -webkit-linear-gradient(
@@ -53,7 +57,7 @@ body {
   }
 
   @include media-breakpoint-up(lg) { 
-    padding: 15%;
+    padding: unset;
     h1 {
       font-size: 80px;
       background: -webkit-linear-gradient(
