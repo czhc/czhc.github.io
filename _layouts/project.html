@@ -2,10 +2,11 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include header.html %}
   <body>
-    <div class="container-fluid content"> 
+    <main class="container-fluid content"> 
       {{ content }}
-    </div>
-  {% include tags.html %}
+      {% include tags.html %}
+    </main>
+
   {% include footer.html %}
   {% include tracking.html %}
   </body>

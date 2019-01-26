@@ -20,9 +20,11 @@ body {
   font-family: $font-family;
 }
 
+$footerHeight: 20vh;
 
 .content {
   padding: 2em;
+  min-height: 100vh - $footerHeight;
 }
 
 a { 
@@ -63,9 +65,9 @@ blockquote {
 
 footer {
   padding: 1em 2em;
-  position: absolute;
   width: 100%;
   bottom: 0;
+  height: $footerHeight; 
   background-color: map-get($colors, blue);
   color: map-get($colors, white);
 }
