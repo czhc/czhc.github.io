@@ -28,7 +28,7 @@ defaults:
       path: "_posts/blog"
       type: posts
     values: 
-      permalink: blogs/:year/:month/:day/:title
+      permalink: blog/:year/:month/:day/:title
       category: blog
 #collections: 
 #  projects: 
