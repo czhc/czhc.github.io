@@ -1,0 +1,24 @@
+---
+layout: default
+title: Archives
+date: 
+---
+
+<h1>Archives</h1>
+<hr/>
+<ul class="timeline-list">
+  {% for post in site.posts %}
+    {% unless post.categories[0] == "projects" %}
+      {% unless post.next %}
+        <h3>{{ post.date | date: '%Y %b' }}</h3>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
+        {% if year != nyear %}
+          <h3>{{ post.date | date: '%Y %b' }}</h3>
+        {% endif %}
+      {% endunless %}
+      <li class="event"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>
