@@ -1,0 +1,92 @@
+---
+---
+
+@import "modularscale";
+@import "bootstrap";
+@import "settings";
+@import "typography";
+@import "footer";
+
+body {
+  background-color: darken(map-get($colors, blue), 0%);
+  color: map-get($colors, white);
+  font-family: $font-family;
+}
+
+main {
+  padding: 20%;
+}
+
+.sect--hero {
+  padding: 50% 25%;
+  margin-bottom: 1em;
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+
+    background: -webkit-linear-gradient(
+      -27deg, 
+      map-get($colors, gold) 0%,
+      map-get($colors, gold) 37%,
+      map-get($colors, white) 38%, 
+      map-get($colors, white) 59%, 
+      map-get($colors, gold) 60%,
+      map-get($colors, gold) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: unset;
+    h1 {
+      font-size: 80px;
+      background: -webkit-linear-gradient(
+        -27deg,
+        map-get($colors, gold) 0%,
+        map-get($colors, gold) 46%,
+        map-get($colors, white) 47%,
+        map-get($colors, white) 54%,
+        map-get($colors, gold) 55%,
+        map-get($colors, gold) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @include media-breakpoint-up(lg) { 
+    padding: unset;
+    h1 {
+      font-size: 80px;
+      background: -webkit-linear-gradient(
+        -27deg, 
+        map-get($colors, gold) 0%,
+        map-get($colors, gold) 46%,
+        map-get($colors, white) 47%, 
+        map-get($colors, white) 54%, 
+        map-get($colors, gold) 55%,
+        map-get($colors, gold) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+
+  span {
+    &:before {
+      content: "-\00a0"
+    }
+    &:after {
+      content: "\00a0-"
+    }
+  }
+}
+
+footer {
+  margin-top: 1em;
+  font-size: $font-size-lg;
+}
+
