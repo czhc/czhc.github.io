@@ -17,5 +17,4 @@ Most transactional processes can be modelled as finite state machines (FSMs). A 
 
 States and transitions are less finite in service marketplace transactions. A state machine has multiple and differing sets of "completion", and has multiple participants in navigating a state machine, varying across one-in-a-lifetime (OLT), recurring, and primary-sub transaction state machines.
 
-This project proposes a distributed, customizable software architecture pattern for desigining a software for service transactions, as well as an experimentative framework for optimization.
-
+This project proposes a service fulfilment software architected as a strategy-patterned, distrbuted state machine, its implementations and methods of optimization.
