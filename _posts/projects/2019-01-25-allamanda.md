@@ -1,11 +1,14 @@
 ---
-title: "Project Allamanda - Distributed State Machines as a Web Application architecture"
+title: "Project Allamanda"
+description: "Distributed State Machines as a Web Application architecture"
 categories: [projects]
 tags: [step-functions, workflow-orchestration, finite-state-machines]
 
 ---
 
 # {{ page.title }} 
+{{page.description}}
+
 ---
 
 Most transactional processes can be modelled as finite state machines (FSMs). A ride hailing service has a fixed pickup and drop-off, and a single point of cost calculation and payment transfer. Recent changes to consumer behavior has allowed customizations in cart dimensions (size, cost, etc.) and state transitions (pooling, fare splitting). 
