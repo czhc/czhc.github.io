@@ -1,7 +1,6 @@
 theme: jekyll-theme-minimal
 plugins: 
   - jekyll-sitemap
-  - jekyll-last-modified-at
 title: czhc.io
 description: work in progress
 google_analytics: UA-133008676-1
