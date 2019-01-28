@@ -22,12 +22,14 @@ defaults:
       path: "_posts/projects"
       type: posts
     values:
+      layout: project
       permalink: projects/:title
       category: projects
   - scope:
       path: "_posts/blog"
       type: posts
     values: 
+      layout: default
       permalink: blog/:year/:month/:day/:title
       category: blog
 #collections: 
