@@ -1,23 +1,19 @@
 ---
-title: "Project Allamanda"
-description: "Distributed State Machines as a Web Application architecture"
-categories: [projects]
-tags: [step-functions, workflow-orchestration, finite-state-machines]
-last_modified_at: "2019-01-29"
+
+title: "[AL-01] Distributed State Machines as a Web Application architecture"
 
 ---
 
 # {{ page.title }} 
-
-{{page.description}}
-
 ---
 
 Most transactional processes can be modelled as finite state machines (FSMs). A ride hailing service has a fixed pickup and drop-off, and a single point of cost calculation and payment transfer. Recent changes to consumer behavior has allowed customizations in cart dimensions (size, cost, etc.) and state transitions (pooling, fare splitting). 
 
 States and transitions are less finite in service marketplace transactions. A state machine has multiple and differing sets of "completion", and has multiple participants in navigating a state machine, varying across one-in-a-lifetime (OLT), recurring, and primary-sub transaction state machines.
 
-This project proposes a service fulfilment software architected as a strategy-patterned, distributed state machine, its implementations and methods of optimization.
+This project is to propose a distributed, customiable software architecture pattern for desigining a software for service transactions, as well as an experimentative framework for optimization.
+
+
 
 ## Automata Theory
 
@@ -26,6 +22,8 @@ Automata Theory
 > Logic of computation with respect to simple machines, ... to understand how 
 > machines compute functions and solve problems, ... what it means for a 
 > function to be defined as computable
+
+
 
 State Machines
 
@@ -46,32 +44,6 @@ Given variables Q set of states, O output, Σ input,  δ transition f(x) and λ 
 E.g.
 Mealy: watch with timer, vending machines, traffic light
 Moore: bus routes (?) technically, 
-
-Distributed Computing (vs Parallel Computing)
-1. is a loosely coupled form of parallel computing
-2. has private memory and passes messages between processors via messaging as opposed to shared memory in parallel computing
-
-
-Event-Driven Architecture (EDA)
-
-events (significant change in state) vs messages, and comparing EDA to message-driven architecture
-Event emmitters / producer  ( detect, gather, transfer events) - sinks (applying or filter/trasnform/forward, may have a self-contained reaction to event)
-
-Event flow logical layers:
-
-1. Generator - transform fact into event.
-2. Channel - transfer and serialize information to engine/sink. usually multi-channel and async. 
-3. ENgine/sink - identify events, select and execute reaction(s)
-4. downstream  - response process.
-
-EDAs are loosely coupled and well distributed. Events *can be produced anywhere* and are stateless / *unaware of consequences*
-
-*EDAs vs Sagas*: EDAs for general communcation. Saga pattern is extension to ensure (local) data consistency across services
-
-Sagas in the absence of 2PC (two phase commit). 
-Choreographed (central message, services validate each other procedurally) vs Orchestrated Sagas (one service as a primary actor, validates and triggers specifcal procedure in other service)
-n/b *distributed transactions* in database transactions (has multiple network hosts) - has a transaction manager that creates a global transaction to encompass all individual, distributed transactions. distributed transactions must be ACID by design. Example of transaction management is 2PC
-
 
 
 ### DAG vs FSMs
