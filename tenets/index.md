@@ -3,7 +3,9 @@ title: Tenets
 layout: default
 
 ---
+
 # Tenets
+----
 
 ## 1. Result is King
 
