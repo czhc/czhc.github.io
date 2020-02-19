@@ -1,6 +1,6 @@
 ---
 title: "Project Allamanda"
-description: "Distributed State Machines as a Web Application architecture"
+description: "Marketplace Web Applications using Finite-State Machines"
 categories: [projects]
 tags: [step-functions, workflow-orchestration, finite-state-machines]
 last_modified_at: "2019-01-29"
