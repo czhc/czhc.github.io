@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 plugins: 
   - jekyll-sitemap
+  - jekyll-paginate-v2
 title: czhc.io
 description: work in progress
 google_analytics: UA-133008676-1
@@ -26,12 +27,15 @@ defaults:
       permalink: projects/:title
       category: projects
   - scope:
-      path: "_posts/blog"
+      path: "_posts/guides"
       type: posts
     values: 
       layout: default
-      permalink: blog/:year/:month/:day/:title
-      category: blog
+      permalink: guides/:year/:month/:day/:title
+      category: guides
+pagination: 
+  debug: true
+  per_page: 10
 #collections: 
 #  projects: 
 #    output: true
