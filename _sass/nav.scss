@@ -20,7 +20,12 @@ nav.main-nav {
   }
 
   .description {
-    margin-left: 0.5em;
+
+// restore after beta
+//    margin-left: 0.5em;
+
+// remove after beta
+    font-size: 0.6em;
   }
 }
 
