@@ -1,0 +1,42 @@
+$nav-bg-color: map-get($colors, blue);
+$nav-color: map-get($colors, white);
+
+nav.main-nav, footer {
+  background-color: $nav-bg-color;
+  color: $nav-color;
+
+  @media (prefers-color-scheme: dark){
+    background-color: darken($nav-bg-color, 10%);
+  }
+}
+
+
+nav.main-nav {
+  padding: 10px;
+  .title {
+    font-weight: 600;
+    color: map-get($colors, gold);
+    text-decoration: none;
+  }
+
+  .description {
+    margin-left: 0.5em;
+  }
+}
+
+footer {
+  padding: 1em 2em;
+  width: 100%;
+  bottom: 0;
+  height: $footerHeight; 
+}
+
+
+footer a { 
+  color: map-get($colors, white); 
+  &:hover {
+    color: darken(map-get($colors, gold), 0%); 
+    text-decoration: none;
+  }
+}
+

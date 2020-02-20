@@ -6,7 +6,7 @@
 @import "settings";
 @import "typography";
 @import "monokai.css";
-@import "footer";
+@import "nav";
 
 
 h1,h2,h3,h4,h5,h6,
@@ -29,8 +29,6 @@ body {
   }
 }
 
-$footerHeight: 20vh;
-
 .content {
   padding: 2em;
   min-height: 100vh - $footerHeight;
@@ -39,6 +37,16 @@ $footerHeight: 20vh;
 a {
   @media (prefers-color-scheme: dark){
     color: map-get($colors, gold)
+  }
+}
+
+nav.main-nav {
+  padding: 10px;
+  .title {
+    font-weight: 600;
+  }
+  .description {
+    margin-left: 0.5em;
   }
 }
 

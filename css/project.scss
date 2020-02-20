@@ -6,7 +6,7 @@
 @import "settings";
 @import "typography";
 @import "monokai.css";
-@import "footer";
+@import "nav";
 
 
 h1,h2,h3,h4,h5,h6,
@@ -31,8 +31,6 @@ body {
     background-color: darken(map-get($colors, blue), 20%);
   }
 }
-
-$footerHeight: 20vh;
 
 .content {
   padding: 2em;
@@ -84,11 +82,4 @@ blockquote {
   padding: 0.5em;
 }
 
-footer {
-  padding: 1em 2em;
-  width: 100%;
-  bottom: 0;
-  height: $footerHeight; 
-  background-color: map-get($colors, blue);
-  color: map-get($colors, white);
-}
+
