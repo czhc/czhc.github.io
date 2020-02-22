@@ -244,6 +244,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate-v2
+  jemoji
   rouge
 
 BUNDLED WITH
