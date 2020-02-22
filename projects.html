@@ -1,0 +1,16 @@
+---
+permalink: /projects/
+title: Projects
+layout: default
+
+---
+
+<h1>Projects</h1>
+<hr/>
+<div id="projects">
+{% for post in site.projects %}
+    <article class="item">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+    </article>
+{% endfor %}
+</div>
