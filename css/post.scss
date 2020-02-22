@@ -4,3 +4,15 @@
 @import "czhc-theme";
 @import "monokai.css";
 @import "nav";
+
+.content {
+  padding: 3em 6em;
+  @media (max-width: map-get($screens, ipad)) {
+	padding: 2em;
+  } 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
