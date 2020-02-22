@@ -35,7 +35,7 @@ published: true
         
     4. JSON defined access policy: 
     
-        ```
+        ```json
         {
           "Version": "2012-10-17",
           "Statement": [
@@ -61,26 +61,27 @@ published: true
 
 1. From working directory, run 
 
-    ```
+    ```shell
         awscurl --service es -XPOST $ES/_bulk -H 'Content-Type: application/json' -d "@bulk_movies.json"
     ```
 
     `awscurl` is a python package that wraps around curl to authenticate via AWS Signature V4 Signing Process. Install it via `pip`.
     
     Output: 
-    ```
+
+    ```shell
         {"took":19053,"errors":false,"items":[{"index":{"_index":"movies","_type":"_doc","_id":"2","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":0,"_primary_term":1,"status":201}},{"index":
         ...
     ```
 2. Query inserted data: 
     
-    ```
+    ```sh
         awscurl --service es -XGET "$ES/movies/_search?q=Thriller"
     ```
     
     Output: 
     
-    ```
+    ```sh
         "took":82,"timed_out":false,"_shards":{"total":5,"successful":5,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":0.41501677,"hits":[{"_index":"movies","_type":"_doc","_id":"2","_score":0.41501677,"_source":{"director": "Frankenheimer, John", "genre": ["Drama", "Mystery", "Thriller", "Crime"], "year": 1962, "actor": ["Lansbury, Angela", "Sinatra, Frank", "Leigh, Janet", "Harvey, Laurence", "Silva, Henry", "Frees, Paul", "Gregory, James", "Bissell, Whit",...
     ```
     
@@ -89,7 +90,8 @@ published: true
 1. Create `admin` user in User Pool with a password
 2. Check that Identity Pool is created
 2. Add the following into domain Access Policy: 
-    ```
+
+    ```json
         {
           "Effect": "Allow",
           "Principal": {
