@@ -18,7 +18,7 @@ img {
 }
 
 code {
-  color: lighten(map-get($colors, green), 30%);
+//  color: lighten(map-get($colors, green), 30%);
 
   @media (prefers-color-scheme: dark) {
     color: map-get($colors, gold)
