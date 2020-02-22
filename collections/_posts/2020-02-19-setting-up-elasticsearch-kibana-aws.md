@@ -7,9 +7,8 @@ last_modified_at: "2019-02-19"
 
 ---
 
-# {{ page.title }} 
+This is where the whole thing starts
 
-{{page.description}}
 
----
+
 

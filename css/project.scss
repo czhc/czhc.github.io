@@ -1,48 +1,9 @@
 ---
 ---
 
-@import "modularscale";
-@import "bootstrap";
-@import "settings";
-@import "typography";
+@import "czhc-theme";
 @import "monokai.css";
 @import "nav";
-
-
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6{
-  font-family: $header-font;
-  font-weight: 700;
-  color: map-get($colors, blue);
-
-  
-  @media (prefers-color-scheme: dark) {
-    color: map-get($colors, white)
-  }
-}
-
-body {
-  background-color: lighten(map-get($colors, white), 2%);
-  color: darken(map-get($colors, blue), 5%);
-  font-family: $font-family;
-
-  @media (prefers-color-scheme: dark) {
-    color: map-get($colors, white);
-    background-color: darken(map-get($colors, blue), 20%);
-  }
-}
-
-.content {
-  padding: 2em;
-  min-height: 100vh - $footerHeight;
-}
-
-a {
-  @media (prefers-color-scheme: dark) {
-    color: map-get($colors, gold)
-  }
-}
-
 
 .tags > li > a  { 
   color: map-get($colors, gold); 

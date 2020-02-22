@@ -3,8 +3,21 @@ layout: default
 title: czhc.io
 description:  
 ---  
+<div class="row">
+	<section class="col-sm-12 col-md-9 feed sect--hero">
+	  {% include feed.html %} 
+	</section>
+	<section class="hidden-sm col-md-3 sidebar">
+		<!-- sidebar -->
+	  Bookmarks 
+	</section>
+</div>
 
+
+<!--	
 <section class="text-center align-middle sect--hero">
+--!>
+
 <!--  
   <h1>{{site.title | default: site.github.repository_name }}</h1>  
   <span>{{ site.description | default: site.github.project_tagline }}</span>
@@ -26,6 +39,6 @@ description:
   </footer>
   --!>
 
-</section>
+
 
 

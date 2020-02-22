@@ -1,9 +1,11 @@
 ---
 title: "Project Allamanda"
 description: "Marketplace Web Applications using Finite-State Machines"
+collection: projects
 categories: [projects]
 tags: [step-functions, workflow-orchestration, finite-state-machines]
 last_modified_at: "2019-01-29"
+layout: default
 
 ---
 

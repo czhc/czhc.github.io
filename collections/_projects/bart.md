@@ -1,7 +1,7 @@
 ---
 title: "Project barT"
 description: "Automation and Machine-learned Ranking in Talent Acquisition"
-categories: [projects]
+collection: projects
 tags: [object-character-recognition, natural-language-processing, application-tracking-systems, machine-learning]
 last_modified_at: "2019-01-29"
 

@@ -18,25 +18,29 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
   extensions: fenced_code_blocks
+collections_dir: collections 
+collections: 
+  projects: 
+    output: true
+    permalink: /projects/:title
+  posts: 
+    output : true
 defaults:
   - scope: 
-      path: "_posts/projects"
-      type: posts
+      path: ""
+      type: projects
     values:
       layout: project
       permalink: projects/:title
       category: projects
-  - scope:
-      path: "_posts/guides"
+  - scope: 
       type: posts
     values: 
-      layout: default
-      permalink: guides/:year/:month/:day/:title
-      category: guides
+      layout: post 
+      permalink: /:year/:month/:day/:title
+
 pagination: 
   debug: true
   per_page: 10
-#collections: 
-#  projects: 
-#    output: true
-#    permalink: /projects/:title
+
+ 
