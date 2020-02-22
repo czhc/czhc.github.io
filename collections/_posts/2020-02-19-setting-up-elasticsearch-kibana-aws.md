@@ -4,7 +4,7 @@ description: "Quickstart on rich and simple data analytics using the EXK stack"
 categories: [guides] 
 tags: [big-data, analytics, elk, elasticsearch, kibana]
 last_modified_at: "2019-02-19"
-published: false
+published: true
 ---
 
 ## 1. Creating the AES Domain
