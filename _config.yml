@@ -19,6 +19,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
   extensions: fenced_code_blocks
+
 collections_dir: collections 
 collections: 
   projects: 
