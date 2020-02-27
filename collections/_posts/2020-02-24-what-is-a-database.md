@@ -1,10 +1,11 @@
 ---
-title: "Appreciating Databases: What is a Database?
+title: "Appreciating Databases: What is a Database?"
 description: "Demystifying Database components and how they perform"
 categories: [posts] 
 tags: [databases]
 last_modified_at: "2019-02-24"
 published: false 
+
 ---
 
 What is a Database? Is data just data, and a database just a data store? 

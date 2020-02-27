@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between EBS and EFS?"
+title: "[Question] What is the difference between EBS and EFS?"
 description: ""
 categories: [quick-tips]
 tags: [storage, ebs, efs, filesystems]
