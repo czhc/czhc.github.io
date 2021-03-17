@@ -125,5 +125,8 @@ This demo does not cover concepts on cluster sizing, dedicated master and replic
 
 
 
+This guide deployes an ES cluster that is publicly accessible and access control is managed via IPv4 address whitelisting. If you are looking to use ES clusters deployed in a private network (in a VPC), feel free to check out this updated guide: [HERE](/collections/_posts/2021/03/17/setting-up-kibana-for-amazon-elasticsearch-with-vpc-support)
+
+
 
 
