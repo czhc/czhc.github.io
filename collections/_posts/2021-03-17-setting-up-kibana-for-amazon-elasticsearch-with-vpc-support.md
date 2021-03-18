@@ -10,7 +10,7 @@ published: true
 ## Creating the Cognito User Pool and Identity Pool 
 
 
-## Cognito User Pool Walkthrough
+### Cognito User Pool Walkthrough
 
 1. Pool-name: Movies-UserPool
 2. Review defaults
@@ -25,7 +25,7 @@ published: true
 	3. Create App Client
 	4. Show details. Take note of the *App client Id* 
 
-## Cognito Identity Pool Walkthough
+### Cognito Identity Pool Walkthough
 
 1. Identity pool name: Movies_IdentityPool
 2. Unauthenticated identities: skip
