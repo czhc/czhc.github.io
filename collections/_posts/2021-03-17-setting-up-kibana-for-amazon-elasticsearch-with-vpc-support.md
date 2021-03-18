@@ -7,7 +7,7 @@ last_modified_at: "2020-03-17"
 published: true
 ---
 
-## Creating the Cognito User Pool and Identity Pool 
+## 1. Creating the Cognito User Pool and Identity Pool 
 
 
 ### Cognito User Pool Walkthrough
