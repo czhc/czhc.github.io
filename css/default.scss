@@ -52,6 +52,10 @@
 .sidebar > section {
   padding: 1em;
   background-color: white;
+  @media (prefers-color-scheme: dark) {
+    background-color: darken(map-get($colors, blue), 15%);
+  }
+
   border-radius: 0.5em;
   &:not(:first-child){
     margin-top: 1em;
