@@ -1,16 +1,18 @@
 <head>
   <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description}}</title>
+  <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico"/>
+
   <!-- Required meta tags always come first -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+
   {% seo %}
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{ '/css/$layout.css?v=' | replace: '$layout', page.layout | append: site.github.build_revision | relative_url }}">
- 
-  
+
+
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
