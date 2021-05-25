@@ -3,7 +3,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jemoji
-title: czhc.io
+title: czhc.dev
 description: beta 
 google_analytics: UA-133008676-1
 sass: 
