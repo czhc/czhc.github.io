@@ -3,6 +3,7 @@
 @import "czhc-theme";
 @import "monokai.css";
 @import "nav";
+@import "sidebar";
 
 .timeline-list { list-style: none };
 .timeline-list h3 { margin-top: 1.5em; }
@@ -48,22 +49,4 @@
 //   };
 
 //   .datetime { font-weight: 400}
-}
-.sidebar > section {
-  padding: 1em;
-  background-color: white;
-  @media (prefers-color-scheme: dark) {
-    background-color: darken(map-get($colors, blue), 15%);
-  }
-
-  border-radius: 0.5em;
-  &:not(:first-child){
-    margin-top: 1em;
-  }
-}
-
-.aboutme {
-  span {
-    font-size: 0.9em;
-  }
 }
