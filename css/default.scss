@@ -26,7 +26,7 @@
   padding: 2em 3px;
   position: absolute;
   left: 2em+2em+0.7em;
-  z-index: -5; 
+  z-index: -5;
 }
 
 .timeline-list li:first-child { background-color: red };
@@ -43,9 +43,17 @@
     a {
 	    text-decoration: none;
     }
-//   a { 
-//	color: map-get($colors, black) 
+//   a {
+//	color: map-get($colors, black)
 //   };
 
 //   .datetime { font-weight: 400}
+}
+.sidebar > section {
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  &:not(:first-child){
+    margin-top: 1em;
+  }
 }

@@ -1,30 +1,30 @@
 ---
-layout: default 
+layout: default
 title: czhc.dev
-description:  
----  
+description:
+---
 <div class="row">
 	<section class="col-sm-12 col-md-9 feed sect--hero">
-	  {% include feed.html %} 
+	  {% include feed.html %}
 	</section>
 	<section class="hidden-sm col-md-3 sidebar">
-		<!-- sidebar 
-		Bookmarks --!> 
+    {% include aboutme.html %}
+    {% include bookmarks.html %}
 	</section>
 </div>
 
 
-<!--	
+<!--
 <section class="text-center align-middle sect--hero">
 --!>
 
-<!--  
-  <h1>{{site.title | default: site.github.repository_name }}</h1>  
+<!--
+  <h1>{{site.title | default: site.github.repository_name }}</h1>
   <span>{{ site.description | default: site.github.project_tagline }}</span>
 
 
   <footer>
-    <ul class="list-inline"> 
+    <ul class="list-inline">
       <li class="list-inline-item">
         <a class='github' href="https://www.github.com/czhc">
           <i class="fab fa-github" title="github.com/czhc"></i>
@@ -35,7 +35,7 @@ description:
           <i class="fab fa-twitter" title="twitter.com/cedriczhchan"></i>
         </a>
       </li>
-    </ul>        
+    </ul>
   </footer>
   --!>
 

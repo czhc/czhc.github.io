@@ -1,12 +1,11 @@
+<h1>Posts</h1>
 <ul class="list-unstyled">
-
-
 {% for post in site.posts %}
       {% unless post.collection == 'projects' %}
         <li>
 	  <a href="{{post.url}}">
 	    <!--
-	     <span class="datetime">{{ post.date | date_to_string: "ordinal", "US" }}</span>: 
+	     <span class="datetime">{{ post.date | date_to_string: "ordinal", "US" }}</span>:
 	     --!>
 <!--	     <h4>{{ post.title }}</h4>
 	     <div>{{ post.excerpt }} </div>
