@@ -2,7 +2,7 @@
 	<h2>Recent saves</h2>
 	<ul class="list-unstyled">
 	{% for bm in site.data.bookmarks %}
-	    <li><a href="{{bm.url}}?ref={{site.url}}" target="_blank"> {{ bm.title | truncate: 60}} </a></li>
+	    <li>{{ bm.src }}: <a href="{{bm.url}}?ref={{site.url}}" target="_blank"> {{ bm.title | truncate: 40}} </a></li>
 	{% endfor %}
 	</ul>
 </section>

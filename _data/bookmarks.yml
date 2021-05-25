@@ -1,10 +1,15 @@
 - url: "https://blog.goodaudience.com/understanding-zero-knowledge-proofs-through-simple-examples-df673f796d99"
-  title: "Good Audience: Understanding ZKPs"
+  src: Good Audience
+  title: "Understanding ZKPs"
 - url: "https://z.cash/technology/zksnarks/"
-  title: "zCash: what are zk-Snarks?"
+  src: z-Cash
+  title: "what are zk-Snarks?"
 - url: "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html"
-  title: "Zimmerman: Why I wrote PGP"
+  src: Zimmerman
+  title: "Why I wrote PGP"
 - url: "https://docs.defisafety.com/misc-and-in-work/uniswap-v3"
-  title: "DefiSafety: security standards for Defi protocols"
+  src: DefiSafety
+  title: "Security standards for Defi protocols"
 - url: "https://missing.csail.mit.edu/"
+  src: MIT
   title: "The Missing Semester of your CS Education"
