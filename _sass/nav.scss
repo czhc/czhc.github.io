@@ -25,9 +25,9 @@ nav.main-nav {
   .socials {
     margin-left: 1em;
     ul { margin: 0; }
-    .fab {
+    .fab,.far,.fas {
       color: $nav-color;
-      font-size: 1.5em; 
+      font-size: 1.5em;
     }
   }
   .description {
@@ -47,10 +47,10 @@ footer {
 }
 
 
-footer a { 
-  color: map-get($colors, white); 
+footer a {
+  color: map-get($colors, white);
   &:hover {
-    color: darken(map-get($colors, gold), 0%); 
+    color: darken(map-get($colors, gold), 0%);
     text-decoration: none;
   }
 }
