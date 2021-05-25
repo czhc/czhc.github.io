@@ -1,25 +1,16 @@
 ---
 layout: default
 ---
-<div class="row">
-	<section class="col-sm-12 offset-md-2 col-md-6 feed sect--hero">
-		<h1> {{ page.title }} </h1>
-		<p>{{ page.description }}</p>
-		<hr/>
+<h1> {{ page.title }} </h1>
+<p>{{ page.description }}</p>
+<hr/>
 
-		{{ content }}
+{{ content }}
 
-		<hr/>
-		<ul class="tags list-inline">
-			Tags:
-			{% for tag in page.tags %}
-			    <li class="list-inline-item"><a href="/tags"> {{tag}} </a></li>
-			{% endfor %}
-		</ul>
-	</section>
-
-	<section class="col-sm-12 col-md-2 sidebar">
-		{% include aboutme.html %}
-		{% include bookmarks.html %}
-	</section>
-</div>
+<hr/>
+<ul class="tags list-inline">
+	Tags:
+	{% for tag in page.tags %}
+	    <li class="list-inline-item"><a href="/tags"> {{tag}} </a></li>
+	{% endfor %}
+</ul>
