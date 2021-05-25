@@ -19,7 +19,17 @@ nav.main-nav {
     color: map-get($colors, gold);
     text-decoration: none;
   }
-
+  .main,.socials {
+    display: inline-block;
+  }
+  .socials {
+    margin-left: 1em;
+    ul { margin: 0; }
+    .fab {
+      color: $nav-color;
+      font-size: 1.5em; 
+    }
+  }
   .description {
 
 // restore after beta
