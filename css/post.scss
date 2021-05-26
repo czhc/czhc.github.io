@@ -57,6 +57,15 @@ h6,.h6,%h6{
   @include ms-respond(font-size, 1.1);
 }
 
+h3,h5,
+.h3,.h5 {
+  color: lighten(map-get($colors, blue),20%);
+  @media (prefers-color-scheme: dark) {
+    color: darken(map-get($colors, white),25%);
+  }
+
+}
+
 .highlight {
   border-radius: 3px;
 }
