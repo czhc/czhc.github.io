@@ -13,3 +13,6 @@
 - url: "https://missing.csail.mit.edu/"
   src: MIT
   title: "The Missing Semester of your CS Education"
+- url: "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
+  src: BIPs
+  title: Hierarchical Deterministic Wallets
