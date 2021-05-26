@@ -5,7 +5,7 @@ plugins:
   - jemoji
 title: czhc.dev
 description: beta
-google_analytics: UA-133008676-1
+google_analytics: G-B1138DWXEB
 sass:
   sass_dir: _sass
   style: compressed
