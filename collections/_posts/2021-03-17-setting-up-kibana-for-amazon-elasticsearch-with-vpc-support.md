@@ -7,7 +7,7 @@ last_modified_at: "2020-03-17"
 published: true
 ---
 
-## 1. Creating the Cognito User Pool and Identity Pool
+## Creating the Cognito User Pool and Identity Pool
 
 
 ### Cognito User Pool Walkthrough
@@ -39,7 +39,7 @@ published: true
 	1. Select Create a new IAM Role for UNauthenticated identities with Role Name: *Movies_IdentityPoolAuth_Role*
 
 
-## 2. Creating the AES domain
+## Creating the AES domain
 
 1. From the AES dashboard, click on *Create a new domain*
 1. Choose Deployment type:
@@ -90,7 +90,7 @@ published: true
 You have now created your Elasticsearch domain. Wait for the domain status to turn to **ACTIVE** before proceeding.
 
 
-## 1.1. (Optional) Loading data into your ES domain
+## (Optional) Loading data into your ES domain
 
 // todo
 
@@ -118,7 +118,7 @@ From the AWS console, launch Cloudshell and wait for the environment to become a
 
 
 
-## 3. Deploying a Proxy
+## Deploying a Proxy
 
 Whne your domain is ACTIVE, you will be provided with the **VPC endpoint** and **Kibana** URL in the Overview.
 
@@ -153,7 +153,7 @@ To allow public access into a private resource, we will need a proxy or a jump h
 //todo
 
 
-## 4. Setting up an SSH tunnel
+## Setting up an SSH tunnel
 
 1. In your local machine, open an SSH tunnel with the following command. You will notice that the command is suspended if the tunnel is open.
 

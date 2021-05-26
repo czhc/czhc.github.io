@@ -7,7 +7,7 @@ last_modified_at: "2019-02-19"
 published: true
 ---
 
-## 1. Creating the AES Domain
+## Creating the AES Domain
 
 1. Choose Deployment type:
     1. Deployment type: `Development and testing`
@@ -55,9 +55,10 @@ published: true
           ]
         }
         ```
+
     5. Require HTTPS for all traffic, enable node-to-node encryption. (t2.small does not support encryption at rest)
 
-## 2. Loading and Reading Data into Domain
+## Loading and Reading Data into Domain
 
 1. From working directory, run
 
@@ -85,7 +86,7 @@ published: true
         "took":82,"timed_out":false,"_shards":{"total":5,"successful":5,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":0.41501677,"hits":[{"_index":"movies","_type":"_doc","_id":"2","_score":0.41501677,"_source":{"director": "Frankenheimer, John", "genre": ["Drama", "Mystery", "Thriller", "Crime"], "year": 1962, "actor": ["Lansbury, Angela", "Sinatra, Frank", "Leigh, Janet", "Harvey, Laurence", "Silva, Henry", "Frees, Paul", "Gregory, James", "Bissell, Whit",...
     ```
 
-## 3. Viewing Data on Kibana
+## Viewing Data on Kibana
 
 1. Create `admin` user in User Pool with a password
 2. Check that Identity Pool is created
@@ -116,7 +117,7 @@ published: true
 ![](/assets/img/Screenshot%202020-02-18%20at%204.48.46%20AM.png)
 
 
-This demo does not cover concepts on cluster sizing, dedicated master and replication, deploying AES in a VPC with fine-grained access controls. YMMV.
+This demo does not cover concepts on cluster sizing, dedicated master and replication, deploying AES in a VPC with fine-grained access controls.
 
 
 /shrug
@@ -125,7 +126,7 @@ This demo does not cover concepts on cluster sizing, dedicated master and replic
 
 
 
-This guide deployes an ES cluster that is publicly accessible and access control is managed via IPv4 address whitelisting. If you are looking to use ES clusters deployed in a private network (in a VPC), feel free to check out this updated guide: [HERE](/collections/_posts/2021/03/17/setting-up-kibana-for-amazon-elasticsearch-with-vpc-support)
+\[edit\] This guide deployes an ES cluster that is publicly accessible and access control is managed via IPv4 address whitelisting. If you are looking to use ES clusters deployed in a private network (in a VPC), feel free to check out this updated guide: [HERE](/collections/_posts/2021/03/17/setting-up-kibana-for-amazon-elasticsearch-with-vpc-support)
 
 
 
