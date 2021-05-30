@@ -28,6 +28,8 @@ collections:
     permalink: /projects/:title
   posts:
     output : true
+  bytes:
+    output: true
 defaults:
   - scope:
       path: ""

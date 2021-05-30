@@ -1,0 +1,16 @@
+---
+permalink: /bytes
+title: Bytes
+layout: default
+
+---
+
+<h1>bytes</h1>
+<hr/>
+<div id="projects">
+{% for byte in site.bytes %}
+    <article class="item">
+      <a href="{{ site.baseurl }}{{ byte.url }}">{{byte.title}}</a>
+    </article>
+{% endfor %}
+</div>

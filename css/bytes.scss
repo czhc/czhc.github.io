@@ -1,0 +1,97 @@
+---
+---
+
+@import "czhc-theme";
+@import "monokai.css";
+@import "nav";
+@import "sidebar";
+
+.content {
+  padding: 3em 6em;
+  @media (max-width: map-get($screens, ipad)) {
+	padding: 2em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+//  color: lighten(map-get($colors, green), 30%);
+
+  @media (prefers-color-scheme: dark) {
+    color: map-get($colors, gold)
+  };
+}
+
+ol, ul, dl {
+  @media (max-width: map-get($screens, ipad)){
+    padding-inline-start: 15px;
+  }
+}
+
+// overwrite typography.scss
+h1,.h1,%h1{
+  @include ms-respond(font-size, 2.5);
+  margin-bottom: 1em;
+}
+
+h2,.h2,%h2{
+  @include ms-respond(font-size, 2);
+}
+
+h3,.h3,%h3{;
+  @include ms-respond(font-size, 1.75);
+}
+
+h4,.h4,%h4{
+  @include ms-respond(font-size, 1.5);
+}
+
+h5,.h5,%h5{
+  @include ms-respond(font-size, 1.25);
+}
+
+h6,.h6,%h6{
+  @include ms-respond(font-size, 1.1);
+}
+
+h3,h5,
+.h3,.h5 {
+  color: lighten(map-get($colors, blue),20%);
+  @media (prefers-color-scheme: dark) {
+    color: darken(map-get($colors, white),25%);
+  }
+
+}
+
+.highlight {
+  border-radius: 3px;
+}
+
+.tags > li > a  {
+  color: map-get($colors, gold);
+  &:hover {
+    color: lighten(map-get($colors, gold), 10%);
+    text-decoration: none;
+  }
+}
+
+.byte-section {
+  .byte-text {
+  }
+  blockquote {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;      
+    padding: 0.8em 0.8em 0.8em 50px;  
+    border-left: map-get($colors, white) 5px solid;
+  }
+  .cite {
+    text-align: right;
+    font-size: 12px;
+  }
+}
+//endoverwrite
+
