@@ -4,9 +4,9 @@
 - url: "https://z.cash/technology/zksnarks/"
   src: z-Cash
   title: "what are zk-Snarks?"
-- url: "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html"
-  src: Zimmerman
-  title: "Why I wrote PGP"
+- url: "mev.wiki"
+  src: Automata Network
+  title: "MEV.wiki"
 - url: "https://docs.defisafety.com/misc-and-in-work/uniswap-v3"
   src: DefiSafety
   title: "Security standards for Defi protocols"
