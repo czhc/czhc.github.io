@@ -3,7 +3,7 @@
 	<p>Quips, blurbs, retorts: off-the-cuff. </p>
 	<ul class="list-unstyled">
 	{% for byte in site.bytes %}
-	    <li><a href="{{byte.url}}?ref={{site.url}}" target="_blank"> {{ byte.title | truncate: 40}}</a>: ...</li>
+	    <li><a href="{{byte.url}}"> {{ byte.title | truncate: 40}}</a>: ...</li>
 	{% endfor %}
 	</ul>
 </section>
