@@ -3,7 +3,13 @@
 	<p>Quips, blurbs, retorts: off-the-cuff. </p>
 	<ul class="list-unstyled">
 	{% for byte in site.bytes %}
-	    <li><a href="{{byte.url}}"> {{ byte.title | truncate: 40}}</a>: ...</li>
+			{% assign date = byte.date | date: '%m/%d' %}
+			{% assign blurb = byte.content | strip_html %}
+	    <li>
+	    	<a href="{{byte.url}}">
+	    		{{ date | append: " " | append: blurb | truncate: 40, "..." }}
+	    	</a>
+	    </li>
 	{% endfor %}
 	</ul>
 </section>
