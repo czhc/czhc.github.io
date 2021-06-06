@@ -2,7 +2,7 @@
 	<h3>bytes</h3>
 	<p>Quips, blurbs, retorts: off-the-cuff. </p>
 	<ul class="list-unstyled">
-	{% for byte in site.bytes %}
+	{% for byte in site.bytes reversed %}
 			{% assign date = byte.date | date: '%m/%d' %}
 			{% assign blurb = byte.content | strip_html %}
 	    <li>
