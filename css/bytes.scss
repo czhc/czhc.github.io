@@ -5,6 +5,7 @@
 @import "monokai.css";
 @import "nav";
 @import "sidebar";
+@import "quote";
 
 .content {
   padding: 3em 6em;
@@ -79,26 +80,5 @@ h3,h5,
   }
 }
 
-.byte-section {
-  .byte-text {
-  }
-  blockquote {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.8em 0.8em 0.8em 1.5em;  
-    border-left: map-get($colors, white) 5px solid;
-
-    @media (min-width: map-get($screens, ipad)) {
-      padding: 0.8em 0.8em 0.8em 50px;  
-      width: 80%;
-    }
-
-  }
-
-
-  .cite {
-    text-align: right;
-    font-size: 12px;
-  }
-}
 //endoverwrite
 

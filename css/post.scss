@@ -5,6 +5,7 @@
 @import "monokai.css";
 @import "nav";
 @import "sidebar";
+@import "quote";
 
 .content {
   padding: 3em 6em;
@@ -80,8 +81,8 @@ h3,h5,
 
 //endoverwrite
 
-
 .retro-footnotes {
   font-size: 12px;
   font-style: italic;
 }
+
