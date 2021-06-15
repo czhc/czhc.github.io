@@ -13,6 +13,9 @@
 - url: "https://mises.org/library/bitcoin-regression-theorem-and-emergence-new-medium-exchange"
   src: Mises Institute
   title: "Bitcoin, the Regression Theorem, and the Emergence of a New Medium of Exchange"
+- url: "https://ethereum.org/en/whitepaper"
+  src: Ethereum.org
+  title: Ethereum Whitepaper
 - url: "https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/syllabus/"
   src: MIT OCW
   title: "Blockchain and Money"
