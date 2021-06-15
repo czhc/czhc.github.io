@@ -1,18 +1,18 @@
+- url: "https://medium.com/shyft-network-media/understanding-trie-databases-in-ethereum-9f03d2c3325d"
+  src: Shfyt Network
+  title: "Understanding Trie databases in Ethereum"
+- url: "https://curve.fi/files/crypto-pools-paper.pdf"
+  src: Curve Finance
+  title: "Automatic market-making with dynamic peg"
+- url: "https://www.seba.swiss/research/yearn-finance-decentralised-asset-management"
+  src: SEBA Bank
+  title: "Yearn Finance - Decentralized Asset Management"
+- url: "https://www.amazon.com/Cypherpunks-Freedom-Internet-Julian-Assange/dp/1944869085"
+  src: Julian Assange
+  title: "Cypherpunks: Freedom and the Future of the Internet"
+- url: "https://mises.org/library/bitcoin-regression-theorem-and-emergence-new-medium-exchange"
+  src: Mises Institute
+  title: "Bitcoin, the Regression Theorem, and the Emergence of a New Medium of Exchange"
 - url: "https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/syllabus/"
   src: MIT OCW
   title: "Blockchain and Money"
-- url: "https://z.cash/technology/zksnarks/"
-  src: z-Cash
-  title: "what are zk-Snarks?"
-- url: "mev.wiki"
-  src: Automata Network
-  title: "MEV.wiki"
-- url: "https://docs.defisafety.com/misc-and-in-work/uniswap-v3"
-  src: DefiSafety
-  title: "Security standards for Defi protocols"
-- url: "https://missing.csail.mit.edu/"
-  src: MIT
-  title: "The Missing Semester of your CS Education"
-- url: "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
-  src: BIPs
-  title: Hierarchical Deterministic Wallets
