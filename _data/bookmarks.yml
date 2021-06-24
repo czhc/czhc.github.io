@@ -1,3 +1,15 @@
+- url: "https://tracer.finance/radar/arbitrum-in-under-10/"
+  src: Tracer Finance
+  title: "Arbitrum in under 10 minutes"
+- url: "https://medium.com/ethereum-cat-herders/london-upgrade-overview-8eccb0041b41"
+  src: Eth Cat Herders
+  title: London Upgrade Overview
+- url: https://eips.ethereum.org/EIPS/eip-2535
+  src: EIP-2535
+  title: Diamond Standard
+- url: https://gitcoin.co/blog/technical-deep-dive-architecture-choices-for-subscriptions-on-the-blockchain-erc948/
+  src: Gitcoin
+  title: Archicture Choices for Subscriptions on the Blockchain
 - url: "https://medium.com/shyft-network-media/understanding-trie-databases-in-ethereum-9f03d2c3325d"
   src: Shfyt Network
   title: "Understanding Trie databases in Ethereum"
@@ -7,15 +19,3 @@
 - url: "https://www.seba.swiss/research/yearn-finance-decentralised-asset-management"
   src: SEBA Bank
   title: "Yearn Finance - Decentralized Asset Management"
-- url: "https://www.amazon.com/Cypherpunks-Freedom-Internet-Julian-Assange/dp/1944869085"
-  src: Julian Assange
-  title: "Cypherpunks: Freedom and the Future of the Internet"
-- url: "https://mises.org/library/bitcoin-regression-theorem-and-emergence-new-medium-exchange"
-  src: Mises Institute
-  title: "Bitcoin, the Regression Theorem, and the Emergence of a New Medium of Exchange"
-- url: "https://ethereum.org/en/whitepaper"
-  src: Ethereum.org
-  title: Ethereum Whitepaper
-- url: "https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/syllabus/"
-  src: MIT OCW
-  title: "Blockchain and Money"
