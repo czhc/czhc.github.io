@@ -1,21 +1,24 @@
-- url: "https://tracer.finance/radar/arbitrum-in-under-10/"
-  src: Tracer Finance
-  title: "Arbitrum in under 10 minutes"
-- url: "https://medium.com/ethereum-cat-herders/london-upgrade-overview-8eccb0041b41"
-  src: Eth Cat Herders
-  title: London Upgrade Overview
+- url: "https://efinity.io/whitepaper/efinity-parachain"
+  src: Efinity Parachain
+  title: Whitepaper - Next-Gen blockchain for NFTs
+- url: "http://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/"
+  src: Hacking Distributed
+  title: Analysis of the DAO exploit
+- url: "https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html"
+  src: fravoll
+  title: Checks-Effects-Interactions
+- url: "https://consensys.github.io/smart-contract-best-practices/known_attacks/"
+  src: Consensys
+  title: Smart Contract Known Attacks
+- url: "https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/"
+  src: ToB (2018)
+  title: Smart Contract Upgrade Anti-Patterns
 - url: https://eips.ethereum.org/EIPS/eip-2535
   src: EIP-2535
   title: Diamond Standard
-- url: https://gitcoin.co/blog/technical-deep-dive-architecture-choices-for-subscriptions-on-the-blockchain-erc948/
-  src: Gitcoin
-  title: Archicture Choices for Subscriptions on the Blockchain
-- url: "https://medium.com/shyft-network-media/understanding-trie-databases-in-ethereum-9f03d2c3325d"
-  src: Shfyt Network
-  title: "Understanding Trie databases in Ethereum"
-- url: "https://curve.fi/files/crypto-pools-paper.pdf"
-  src: Curve Finance
-  title: "Automatic market-making with dynamic peg"
-- url: "https://www.seba.swiss/research/yearn-finance-decentralised-asset-management"
-  src: SEBA Bank
-  title: "Yearn Finance - Decentralized Asset Management"
+- url: "https://medium.com/ethereum-cat-herders/london-upgrade-overview-8eccb0041b41"
+  src: Eth Cat Herders
+  title: London Upgrade Overview
+- url: "https://tracer.finance/radar/arbitrum-in-under-10/"
+  src: Tracer Finance
+  title: "Arbitrum in under 10 minutes"
