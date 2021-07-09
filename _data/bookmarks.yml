@@ -1,6 +1,9 @@
 - url: "https://efinity.io/whitepaper/efinity-parachain"
   src: Efinity Parachain
   title: Whitepaper - Next-Gen blockchain for NFTs
+- url: "https://swcregistry.io/"
+  src: SWC Registry
+  title: Smart Contract Weakness Classification and Test Cases
 - url: "http://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/"
   src: Hacking Distributed
   title: Analysis of the DAO exploit
