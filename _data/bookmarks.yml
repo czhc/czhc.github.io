@@ -1,6 +1,9 @@
 - url: "https://efinity.io/whitepaper/efinity-parachain"
   src: Efinity Parachain
   title: Whitepaper - Next-Gen blockchain for NFTs
+- url: "https://insights.deribit.com/market-research/the-onion-model-of-blockchain-security-part-1/"
+  src: Deribit
+  title: The Onion Model of Blockchain Security pt. 1
 - url: "https://swcregistry.io/"
   src: SWC Registry
   title: Smart Contract Weakness Classification and Test Cases
@@ -19,9 +22,3 @@
 - url: https://eips.ethereum.org/EIPS/eip-2535
   src: EIP-2535
   title: Diamond Standard
-- url: "https://medium.com/ethereum-cat-herders/london-upgrade-overview-8eccb0041b41"
-  src: Eth Cat Herders
-  title: London Upgrade Overview
-- url: "https://tracer.finance/radar/arbitrum-in-under-10/"
-  src: Tracer Finance
-  title: "Arbitrum in under 10 minutes"
