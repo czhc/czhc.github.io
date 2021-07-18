@@ -1,6 +1,6 @@
 - url: "https://research.paradigm.xyz/optimism"
   src: Paradigm
-  title: Paradigm: How does Optimism's Rollup really work?
+  title: "How does Optimism's Rollup really work?"
 - url: "https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/"
   src: Deribit
   title: Why I have changed my mind on tokens
@@ -15,7 +15,7 @@
   title: "In 2008, America Stopped Believing in the American Dream"
 - url: "https://blog.polygon.technology/introducing-avail-by-polygon-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048"
   src: Polygon
-  title: Introducing Avail: General-purpose Scalable Data Availability Layer
+  title: "Introducing Avail: General-purpose Scalable Data Availability Layer"
 - url: "https://efinity.io/whitepaper/efinity-parachain"
   src: Efinity Parachain
   title: Whitepaper - Next-Gen blockchain for NFTs
