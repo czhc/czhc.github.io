@@ -1,27 +1,24 @@
+- url: "https://research.paradigm.xyz/optimism"
+  src: Paradigm
+  title: Paradigm: How does Optimism's Rollup really work?
+- url: "https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/"
+  src: Deribit
+  title: Why I have changed my mind on tokens
 - url: "https://www.rekt.news/curve-wars/"
   src: RektHQ
   title: Curve Wars (Yearn. v StakeDAO v. Convex)
+- url: "https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html"
+  src: Dankrad Feist
+  title: Kate polynomial commitments
+- url: "https://nymag.com/intelligencer/2018/08/frank-rich-2008-financial-crisis-end-of-american-dream.html"
+  src: Intelligencer
+  title: "In 2008, America Stopped Believing in the American Dream"
+- url: "https://blog.polygon.technology/introducing-avail-by-polygon-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048"
+  src: Polygon
+  title: Introducing Avail: General-purpose Scalable Data Availability Layer
 - url: "https://efinity.io/whitepaper/efinity-parachain"
   src: Efinity Parachain
   title: Whitepaper - Next-Gen blockchain for NFTs
 - url: "https://insights.deribit.com/market-research/the-onion-model-of-blockchain-security-part-1/"
   src: Deribit
   title: The Onion Model of Blockchain Security pt. 1
-- url: "https://swcregistry.io/"
-  src: SWC Registry
-  title: Smart Contract Weakness Classification and Test Cases
-- url: "http://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/"
-  src: Hacking Distributed
-  title: Analysis of the DAO exploit
-- url: "https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html"
-  src: fravoll
-  title: Checks-Effects-Interactions
-- url: "https://consensys.github.io/smart-contract-best-practices/known_attacks/"
-  src: Consensys
-  title: Smart Contract Known Attacks
-- url: "https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/"
-  src: ToB (2018)
-  title: Smart Contract Upgrade Anti-Patterns
-- url: https://eips.ethereum.org/EIPS/eip-2535
-  src: EIP-2535
-  title: Diamond Standard
