@@ -7,12 +7,13 @@ last_modified_at: "2021-07-20"
 published: true
 ---
 
+### Interacting with Smart Contracts on Etherscan
 
 Etherscan is **the** block explorer to view onchain data and transactions for Ethereum. It also provides several handy tools including **verified contracts** which allows you to interact with smart contracts without using a dApp or UI.
 
 ![Etherscan Contracts Tab](/assets/img/posts/2021-07-20-interacting-contracts-etherjs/etherscan-contracts.png)
 
-For example, you can directly use the **Uniswap V2 Router** [link](etherscan.com/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#writeContract) to:
+For example, you can directly use the [**Uniswap V2 Router**](etherscan.com/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#writeContract) to:
 
 * Add or remove liquidity for token pairs using `addLiquidity`
 * Swap ETH for tokens using `swapExactETHForTokens`
@@ -21,14 +22,15 @@ For example, you can directly use the **Uniswap V2 Router** [link](etherscan.com
 ![Swap tokens for tokens](/assets/img/posts/2021-07-20-interacting-contracts-etherjs/swap-tokens.png)
 
 
-without needing to use the web UI at [app.uniswap.org](https://app.uniswap.org/#/swap)
-This can be particularly useful for when the website is unavailable for any number of reasons.
+without needing to use the web UI at [app.uniswap.org](https://app.uniswap.org/#/swap).
+This can be particularly useful for when the website is unavailable for any number of reasons e.g. when the website is down.
 
 
 Unfortunately: this feature is only available for **Verified contracts**, which requires the deployer to take a few more steps to upload the source code and dependencies to Etherscan for verification.
 
 
-### What if you needed a quick way to simply interact with the contract?
+
+### Interacting with unverified contracts
 
 
 I have a modified `Greeter` contract that allows you to set and get its `greeting` attribute. It is modified to only set this variable if you tip it i.e. `setGreeting()` must receive a non-zero `msg.value`.
@@ -39,7 +41,8 @@ I've pre-deployed the `Greeter` at: [https://rinkeby.etherscan.io/address/0x04E9
 How can you interact with the `Greeter` `greet()` or `setGreeting()`, without having the contract verified on Etherscan?
 
 
-## Solution
+
+### Using ethers and contract ABI to interact with deployed contracts
 
 
 First, you will need to compile the contract ABI. ABIs or Application Binary Interfaces are compiled artifacts from the contracts written in high-level programming languages e.g. Solidity. They can be `.json` files, and they describe information about the contracts e.g. functions, payability, return values and state mutability. You can read more about them [here](https://www.sitepoint.com/compiling-smart-contracts-abi/?ref=czhc.dev)
@@ -49,7 +52,6 @@ To compile the contract ABIs from source, you can clone the source-code directly
 
 
 ```bash
-
 # clone repo
 git clone https://github.com/czhc/smockit-poc
 
@@ -69,7 +71,6 @@ Launch the console using
 
 ```sh
 npx hardhat console --network rinkeby
-
 ```
 
 Inside the console (Javascript):
@@ -87,9 +88,7 @@ const greeter = await Greeter.attach('0x04E97E65487aBb3bb8BFcFCeed3755e18Ce2c5E3
 // Check what is the "current" greeting stored in the contract. This may differ based on when you're testing this
 
 await greeter.greet()
-
 // => "Hello world"
-
 ```
 
 
@@ -122,11 +121,13 @@ await greeter.greet()
 ```
 
 
+
 ### Conclusion
 
 That's the quick workaround to interact with or test a pre-deployed contract, using its ABI from source and deployed address.
+This guide also covers how to use [`ethers.js`](http://ethers.io/) (included in hardhat-ethers), and you'll be able to do the same using other web3 libraries e.g [`web3.js`](https://web3js.readthedocs.io/).
 
-It is a good way to quickly test a 3rd party contract which has not been verified, or does not provide UIs to access some methods such as claiming rewards, migrating pools etc. In some cases, it may be useful to invoke emergency withdraws too.
+It is a good way to quickly test a 3rd party contract which has not been verified, or does not provide UIs to access some methods such as claiming rewards, migrating pools etc. - from personal experience. In some cases, it may be useful to invoke emergency withdraws too.
 
 However, keep in mind that directly interacting with functions may have unforeseen consequences.
 
