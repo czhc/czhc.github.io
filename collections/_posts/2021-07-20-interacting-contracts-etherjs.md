@@ -1,5 +1,5 @@
 ---
-title: "[Quick Guide] Interacting with smart contracts using ethers.js"
+title: "[Guide] Interacting with smart contracts using ethers.js"
 description: How to interact with deployed smart contracts which are unverified on etherscan
 categories: [guides, smart-contracts, solidity, ethereum]
 tags: [ethers, hardhat, etherscan, smart-contracts, solidity]
@@ -125,7 +125,7 @@ await greeter.greet()
 ### Conclusion
 
 That's the quick workaround to interact with or test a pre-deployed contract, using its ABI from source and deployed address.
-This guide also covers how to use [`ethers.js`](http://ethers.io/) (included in hardhat-ethers), and you'll be able to do the same using other web3 libraries e.g [`web3.js`](https://web3js.readthedocs.io/).
+This guide also covered how to use the web3 library[`ethers.js`](http://ethers.io/) (included in `hardhat-ethers`) to interact with smart contracts; keep in mind you are able to do the same using other web3 libraries e.g [`web3.js`](https://web3js.readthedocs.io/) - but I personally prefer the `ethers` SDK.
 
 It is a good way to quickly test a 3rd party contract which has not been verified, or does not provide UIs to access some methods such as claiming rewards, migrating pools etc. - from personal experience. In some cases, it may be useful to invoke emergency withdraws too.
 
