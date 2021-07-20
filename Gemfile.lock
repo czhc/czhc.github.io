@@ -284,7 +284,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate-v2
-  jekyll-watch
   jemoji
   rouge
   webrick (~> 1.7)

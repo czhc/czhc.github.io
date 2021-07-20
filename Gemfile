@@ -6,4 +6,3 @@ gem 'rouge'
 gem 'jemoji'
 
 gem "webrick", "~> 1.7"
-gem 'jekyll-watch'
