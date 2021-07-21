@@ -76,6 +76,18 @@ h3,h5,
   h1,h2,h3,h4,h5,h6 {
     margin-top: 2em;
   }
+
+  h2:first-of-type {
+    margin-top: inherit;
+    padding: inherit;
+    border: inherit;
+  }
+
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px dotted #ccc;
+  }
 }
 
 .highlight {
