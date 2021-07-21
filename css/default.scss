@@ -40,13 +40,24 @@
   padding: 5px 3px;
 }
 
-.sect--hero.feed {
-    a {
-	    text-decoration: none;
-    }
-//   a {
-//	color: map-get($colors, black)
-//   };
+.sect--hero {
+  padding: 20px;
+  padding-left: 50px;
 
-//   .datetime { font-weight: 400}
+  .datetime {
+    font-family: $date-font;
+    color: darken(map-get($colors, grey), 10%);
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+    @media (prefers-color-scheme: dark) {
+      color: map-get($colors, white);
+    }
+
+  }
+
+  .feed a {
+    text-decoration: none;
+  }
 }
+
