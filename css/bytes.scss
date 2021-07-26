@@ -35,24 +35,24 @@ ol, ul, dl {
 
 // overwrite typography.scss
 h1,.h1,%h1{
-  @include ms-respond(font-size, 2.5);
+  @include ms-respond(font-size, 1.5);
   margin-bottom: 1em;
 }
 
 h2,.h2,%h2{
-  @include ms-respond(font-size, 2);
+  @include ms-respond(font-size, 1.3);
 }
 
 h3,.h3,%h3{;
-  @include ms-respond(font-size, 1.75);
+  @include ms-respond(font-size, 1.25);
 }
 
 h4,.h4,%h4{
-  @include ms-respond(font-size, 1.5);
+  @include ms-respond(font-size, 1.2);
 }
 
 h5,.h5,%h5{
-  @include ms-respond(font-size, 1.25);
+  @include ms-respond(font-size, 1.15);
 }
 
 h6,.h6,%h6{
@@ -82,3 +82,7 @@ h3,h5,
 
 //endoverwrite
 
+.sect--hero {
+  padding: 20px;
+  height: 100%;
+}
