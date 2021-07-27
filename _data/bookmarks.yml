@@ -7,6 +7,9 @@
 - url: "https://account.paxos.com/whitepaper.pdf"
   src: Paxos
   title: Private, permission settlement system with 24/7 DvP finality
+- url: "https://www.algorand.com/resources/blog/algorand-and-isda-asset-tokenization-and-programmatic-money"
+  src: Algorand
+  title: ISDA builds CDM on Algorand blockchain platform
 - url: "https://www.rekt.news/thorchain-rekt2/"
   src: RektHQ
   title: Thorchain rekted
