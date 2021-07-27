@@ -7,6 +7,9 @@
 - url: "https://account.paxos.com/whitepaper.pdf"
   src: Paxos
   title: Private, permission settlement system with 24/7 DvP finality
+- url: "https://www.rekt.news/thorchain-rekt2/"
+  src: RektHQ
+  title: Thorchain rekted
 - url: "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin"
   src: Project Ubin
   title: "Singapore's CBDC on DLT"
@@ -16,9 +19,6 @@
 - url: "https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/"
   src: Deribit
   title: Why I have changed my mind on tokens
-- url: "https://www.rekt.news/curve-wars/"
-  src: RektHQ
-  title: Curve Wars (Yearn. v StakeDAO v. Convex)
 - url: "https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html"
   src: Dankrad Feist
   title: Kate polynomial commitments
@@ -31,6 +31,3 @@
 - url: "https://efinity.io/whitepaper/efinity-parachain"
   src: Efinity Parachain
   title: Whitepaper - Next-Gen blockchain for NFTs
-- url: "https://insights.deribit.com/market-research/the-onion-model-of-blockchain-security-part-1/"
-  src: Deribit
-  title: The Onion Model of Blockchain Security pt. 1
