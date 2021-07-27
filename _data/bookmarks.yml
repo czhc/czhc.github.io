@@ -4,6 +4,9 @@
 - url: "https://medium.com/racecapital/defi-infrastructure-101-overview-market-landscape-78e096a85834"
   src: Race Capital
   title: DeFi Infrastructure 101
+- url: "https://account.paxos.com/whitepaper.pdf"
+  src: Paxos
+  title: Private, permission settlement system with 24/7 DvP finality
 - url: "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin"
   src: Project Ubin
   title: "Singapore's CBDC on DLT"
