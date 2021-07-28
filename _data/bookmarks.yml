@@ -1,3 +1,9 @@
+- url: "https://www.vechain.org/whitepaper/"
+  src: VeChain
+  title: "PoA 2.0 - SURFACE"
+- url: "https://dci.mit.edu/b-verify"
+  src: b_verify
+  title: Open-source blockchain protocol for verifiable records
 - url: "https://www.dtcc.com/dtcc-connection/galleries/2021/march/10/will-blockchain-revolutionize-clearance-and-settlement"
   src: DTCC
   title: Will Blockchain Revolutionize Clearance and Settlement?
