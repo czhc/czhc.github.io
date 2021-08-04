@@ -1,5 +1,5 @@
 ---
-title: EIP-1559 Expert Panel
+title: EIP-1559 Expert Panel review
 description: AMA panel notes and additional reading materials
 categories: [notes]
 tags: [ethereum, eip-1559, mev, bankless]
