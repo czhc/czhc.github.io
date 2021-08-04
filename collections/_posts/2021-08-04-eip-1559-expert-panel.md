@@ -67,6 +67,8 @@ Will be edited with additional points from Appendix materials
 
 [source](https://ethresear.ch/uploads/default/original/2X/1/197884012ada193318b67c4b777441e4a1830f49.pdf)
 
+#### Understanding Social Costs and Resource Pricing
+
 * Transactions in a blockchain benefits its sender and introduces social costs to all network participants (to process and upload to chain): bandwidth, compute, storage (archive and state)
 
 * **combined cost function C(W) is sum of individual direct resource costs (operational, equipment) versus cost of attack and social value/utility function of decentralization.**
@@ -88,6 +90,11 @@ Will be edited with additional points from Appendix materials
 
 * kth price auctions are not incentive-compaitble for the auctioneer/proposer. **given a steep demand curve, proposers are incentivized to _fill up the block_ with dummy txns to forcefully displace low-fee txns.** - resultin in loss of revenue from low-fee txns, but profiting by generally raising overall fees.
     * incentivizes profit-sharing via collusion with specific txn senders.
+
+#### Hybrid Solution improving on kth Price Auctions
+
+Precursor to EIP1559 using a base fee and priority fees
+
 * An alternative resource pricing/limit rule preferable over a hard limit pricing consists of:
     * constantly in-protocol, adjusting parameter of minimum Fee - which is burned or redistributed to all consensus participants aside from block proposer to prevent side-deal collusions.
     * new weight limit 2x of max hard limit
@@ -97,6 +104,9 @@ Will be edited with additional points from Appendix materials
 
 * Can we somehow measure in-protocol the social cost of computation and bandwidth? e.g. in POW - but POW is fragile against advancements in hardware, only-once, outsourcable computation. POW, POBandwidth carries a risk of incentivzing centralization around specialized hardware.
 
+
+##### Pricing Storage
+
 * Pricing state storage is less complex - state storage is stored by all full nodes forever.
 * Suboptimal storage pricing outcomes:
     * Storage is too cheap
@@ -104,7 +114,7 @@ Will be edited with additional points from Appendix materials
     * insufficient incentive to clear storage - costs more money to clear storage than keep state
     * no incentive to clear storage sooner than later
 * Solutions:
-    * making storage more epeensive - but is prohibitive for short-term usages
+    * making storage more expensive - but is prohibitive for short-term usages
     * time-based refund to incentivize earlier learing - capital inefficient, requireing large depositis to use strorage and assumes social cost of storage will forever decrease
     * time-based storage _maintenance fee_ or _rent_: using x coins per block per byte.
       * if an account has less coins than amount needed to pay for _pokeThreshold_, **anyone can poke the account and delete it from storage**, to claim a fraction of rent.
