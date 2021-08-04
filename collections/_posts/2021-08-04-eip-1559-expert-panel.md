@@ -64,7 +64,6 @@ Will be edited with additional points from Appendix materials
 
 
 ### Blockchain Resource Pricing
-
 [source](https://ethresear.ch/uploads/default/original/2X/1/197884012ada193318b67c4b777441e4a1830f49.pdf)
 
 #### Understanding Social Costs and Resource Pricing
