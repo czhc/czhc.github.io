@@ -18,7 +18,6 @@ Will be edited with additional points from Appendix materials
 * [Lightclients](twitter.com/lightclients)
 
 ### Bankless EIP-1559 Expert Panel
-
 #### KPIs for EIP 1559:
 
 * Gas used metrics - 1559 introduces doubly-sized blocks to act as damper for demand shocks. are blocks getting too full? how often does 1559 revert to auction on the tip? can we quantify how often 1559 is pushed in this operation mode?
