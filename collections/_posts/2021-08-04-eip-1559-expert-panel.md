@@ -1,13 +1,11 @@
 ---
-title: EIP-1559 Expert Panel review
-description: AMA panel notes and additional reading materials
-categories: [notes]
-tags: [ethereum, eip-1559, mev, bankless]
-last_modified_at: "2021-08-04"
+title: EIP-1559 Mega Post
+description: EIP-1559 or Ethereum's London hardfork includes significant changes to the gas fees and ETH tokenomics. This is a recollection of AMA panel notes and reading materials on the subject.
+categories: [notes, ethereum]
+tags: [ethereum, eip-1559, mev, bankless, deribit, paradigm, flashbots]
+last_modified_at: "2021-08-05"
 published: true
 ---
-Quick notes from the AMA.
-Will be edited with additional points from Appendix materials
 
 **Panel**
 
@@ -127,6 +125,42 @@ Precursor to EIP1559 using a base fee and priority fees
     * merkle proofs can be submitted to **prove account exists**, and an instance of **hibernation was not already spent to wake** the contract to avoid _double-waking_.
     * when a **contract is _woken up_: it must be filled a min amount** of: min interval + poke threshold * size of contract * fee per-block
 
+
+
+### Paradigm: Miners will accept EIP-1559
+
+[src](https://www.paradigm.xyz/2021/02/miners-will-accept-eip-1559-here-is-why/)
+
+##### Changes to mining incentives
+
+* Miner revenue consists of: 2ETH block subsidy + rewards for uncle blocks + user bid /inclusion fees + MEV from bidding auctions
+* Post 1559 - Block subsidy and MEV revenues are retained **but** inclusion fees will be burned during non-peak (demand < max gas limit). During congestion (demand > max gas limit), first-price auction rewards are given to miners.
+
+##### Possible responses to 1559
+
+###### Scenario 1: Miners maintain old chain without 1559
+* impossible due to built-in difficulty bomb [last delayed EIP 3554](https://eips.ethereum.org/EIPS/eip-3554)
+* any 1559 opponents will incur same cost of requiring a hard-fork
+
+###### Scenario 2: Miners create altcoin with Ethereum legacy state
+* significant opportunity cost of creating new chain value for users, to fund block subsidies, fees and MEV.
+* History of BCH forking BTC state and airdrop new coins to holders
+* Forking Ethereum state is more complicated due to thousands of existing tokens, contracts, applications already built on Ethereum. Tokens on Ethereum are also tokenized assets/collaterals - a fork of these states will be valueless if the value is migrated to 1559 chain
+
+###### Scenario 3: Miners create altcoin with new state
+* Existing stateless forks of Ethereum: Tron, BSC (retains EVM compatibility, centralized)
+* Resetting distribution of ETH will require a new supply distribution, years of inflation and volatile initial mining incentives
+* Copied distribution of ETH will risk value of forked ETH token being depressed by initial market resulting in valueless mining.
+
+###### Scenario 4: Miners join 1559 chain and supress 1559
+
+* Miners adopt new 1559 chain, but _set base fee (burnable fees) to 0_ by mining blocks that are less than half-full.
+*  Game theory/competition between miners - miners that mine full blocks make more overall revenue from fees and increase basefees. The minority (half-block miners) risk a net negative profit (higher input costs than revenue) and loss in hashpower.
+*  Full-block miner rewards include extra revenue from congestion fees and MEV, with increasing basefee.
+*  Strategy is only feasible if full-block miners are completely eliminated or a 100% consensus in half-block mining.
+*  Miner-activated soft forks (MASF) are feasible, but requires a significantly large coalition from mutually-distrusting miners.
+*  MASFs will also threaten Ethereum stability, ETH price and in return mining revenue.
+
 ### Appendix
 
 * Bankless [EIP-1559](https://www.youtube.com/watch?v=ydAHh-BVGms) Expert Panel
@@ -141,3 +175,4 @@ Precursor to EIP1559 using a base fee and priority fees
 
 * EF: The Problem of [Censorship](https://blog.ethereum.org/2015/06/06/the-problem-of-censorship/)
 
+* [Paradigm](https://www.paradigm.xyz/2021/02/miners-will-accept-eip-1559-here-is-why/): Miners will accept EIP-1559
