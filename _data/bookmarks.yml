@@ -1,6 +1,9 @@
 - url: "https://www.paradigm.xyz/2021/08/two-rights-might-make-a-wrong/"
   src: samczsun
   title: MISO dutch auction contract incident report
+- url: "https://solana.com/news/proof-of-history---a-clock-for-blockchain"
+  src: solana
+  title: "PoH - a clock for blockchain"
 - url: "https://huobi-ventures.medium.com/understanding-the-full-picture-of-mev-4151160b7583"
   src: Huobi Ventures
   title: Understanding the Full Picture of MEV
