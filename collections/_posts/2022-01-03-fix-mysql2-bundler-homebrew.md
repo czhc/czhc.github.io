@@ -34,26 +34,26 @@ The default installation path of homebrew mysql libs are not discovered by mysql
 
 1. Check current `mysql` installation path:
 
-```zsh
-➜  demo git:(main) which mysql
-/usr/local/bin/mysql
+    ```sh
+    ➜  demo git:(main) which mysql
+    /usr/local/bin/mysql
 
-➜  demo git:(main) ls -l /usr/local/bin/mysql
-lrwxr-xr-x  1 foo  admin  34 Jan  3 14:56 /usr/local/bin/mysql -> ../Cellar/mysql/8.0.27_1/bin/mysql
-```
-i.e. `/usr/local/Cellar/mysql/`
+    ➜  demo git:(main) ls -l /usr/local/bin/mysql
+    lrwxr-xr-x  1 foo  admin  34 Jan  3 14:56 /usr/local/bin/mysql -> ../Cellar/mysql/8.0.27_1/bin/mysql
+    ```
+    i.e. `/usr/local/Cellar/mysql/`
 
 2. Set local mysql build paths: 
 
-```zsh
-bundle config --local build.mysql2 "--with-mysql-lib=/usr/local/Cellar/mysql/8.0.27_1/lib --with-mysql-dir=/usr/local/Cellar/mysql/8.0.27_1 --with-mysql-config=/usr/local/Cellar/mysql/8.0.27_1/bin/mysql_config  --with-mysql-include=/usr/local/Cellar/mysql/8.0.27_1/include"
-```
+    ```sh
+    bundle config --local build.mysql2 "--with-mysql-lib=/usr/local/Cellar/mysql/8.0.27_1/lib --with-mysql-dir=/usr/local/Cellar/mysql/8.0.27_1 --with-mysql-config=/usr/local/Cellar/mysql/8.0.27_1/bin/mysql_config  --with-mysql-include=/usr/local/Cellar/mysql/8.0.27_1/include"
+    ```
 
 
 3. Re-run `bundle install`: 
 
-```
-Installing mysql2 0.5.3 with native extensions
-Bundle complete! 21 Gemfile dependencies, 78 gems now installed.
-Use `bundle info [gemname]` to see where a bundled gem is installed.
-```
+    ```sh
+    Installing mysql2 0.5.3 with native extensions
+    Bundle complete! 21 Gemfile dependencies, 78 gems now installed.
+    Use `bundle info [gemname]` to see where a bundled gem is installed.
+    ```
