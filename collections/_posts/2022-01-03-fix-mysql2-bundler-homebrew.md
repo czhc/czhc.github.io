@@ -7,7 +7,7 @@ last_modified_at: "2021-01-03"
 published: true
 ---
 
-## Error
+### Error
 
 [Homebrew](https://brew.sh/) is a popular package manager to install local dependencies on macOS.
 [Bundler](https://bundler.io/) is an application application package manager for Ruby and allows you to install different dependency versions per application environment. [`mysql2`](https://rubygems.org/gems/mysql2/versions/0.5.2) is a Ruby package/gem for managing connections to MySQL. 
@@ -36,7 +36,7 @@ Using mysql_config at /usr/local/bin/mysql_config
 
 The default installation path of homebrew `mysql` libs are not discovered by mysql2: `Don't know how to set rpath on your system, if MySQL libraries are not in path mysql2 may not load`
 
-## How to Fix
+### How to Fix
 
 1. Check current `mysql` installation path:
 
