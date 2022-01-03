@@ -28,8 +28,7 @@ checking for rb_wait_for_single_fd()... yes
 Using mysql_config at /usr/local/bin/mysql_config
 ```
 
-The default installation path of homebrew mysql libs are not discovered by mysql2: `Don't know how to set rpath on your system, if MySQL libraries
-are not in path mysql2 may not load`
+The default installation path of homebrew mysql libs are not discovered by mysql2: `Don't know how to set rpath on your system, if MySQL libraries are not in path mysql2 may not load`
 
 ## Fix
 
