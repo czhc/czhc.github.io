@@ -1,3 +1,12 @@
+- url: "https://learn.0xparc.org/materials/intro/"
+  src: 0xPARC
+  title: Applied ZK Learning Group
+- url: "https://www.youtube.com/watch?v=yDSmTUrpdoQ&list=PL_7kfUeJgSzz5Fltb2nivE_8xuAe2XTJl&index=1"
+  src: OurNetwork
+  title: Data 30 for 30
+- url: "https://fbifemboy.substack.com/p/a-correct-model-of-olympus-dao"
+  src: 0xfemboy
+  title: The correct model for Olympus DAO
 - url: "https://threadreaderapp.com/thread/1430720407070404619.html"
   src: a16z
   title: New metrics of the creator economy
@@ -40,12 +49,3 @@
 - url: "https://research.paradigm.xyz/optimism"
   src: Paradigm
   title: "How does Optimism's Rollup really work?"
-- url: "https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/"
-  src: Deribit
-  title: Why I have changed my mind on tokens
-- url: "https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html"
-  src: Dankrad Feist
-  title: Kate polynomial commitments
-- url: "https://nymag.com/intelligencer/2018/08/frank-rich-2008-financial-crisis-end-of-american-dream.html"
-  src: Intelligencer
-  title: "In 2008, America Stopped Believing in the American Dream"
