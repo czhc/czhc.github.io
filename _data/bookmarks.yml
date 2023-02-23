@@ -1,30 +1,18 @@
+- url: "https://archive.ph/2023.02.14-154049/https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/#selection-457.0-467.0"
+  src: "MIT Technology Review"
+  title: "How Rust went from a side project to the world’s most-loved programming language"
+- url: "https://learn.0xparc.org/"
+  src: 0xPARC
+  title: Applied ZK Learning Group
+- url: "https://github.com/starknet-edu/starknet-cairo-101"
+  src: Starknet
+  title: Starknet Cairo 101
 - url: "https://www.youtube.com/watch?v=DXSIHm115gk"
   src: "Doerr, John"
   title: "Measure What Matters"
 - url: "https://www.amazon.com/dp/B01N3UMHD2/ref=cm_sw_r_cp_ep_dp_FRwKBb7FX5FC0"
   src: "McChrystal, Stanley"
   title: "Team of Teams: New Rules of Engagement for a Complex World"
-- url: "https://learn.0xparc.org/materials/intro/"
-  src: 0xPARC
-  title: Applied ZK Learning Group
 - url: "https://www.youtube.com/watch?v=yDSmTUrpdoQ&list=PL_7kfUeJgSzz5Fltb2nivE_8xuAe2XTJl&index=1"
   src: OurNetwork
   title: Data 30 for 30
-- url: "https://fbifemboy.substack.com/p/a-correct-model-of-olympus-dao"
-  src: 0xfemboy
-  title: The correct model for Olympus DAO
-- url: "https://threadreaderapp.com/thread/1430720407070404619.html"
-  src: a16z
-  title: New metrics of the creator economy
-- url: "https://www.artnome.com/news/2019/4/08/autoglyphs-generative-art-born-on-the-blockchain"
-  src: Artnome
-  title: "Autoglyphs, Generative Art Born on the Blockchain"
-- url: "https://www.paradigm.xyz/2021/08/two-rights-might-make-a-wrong/"
-  src: samczsun
-  title: MISO dutch auction contract incident report
-- url: "https://solana.com/news/proof-of-history---a-clock-for-blockchain"
-  src: solana
-  title: "PoH - a clock for blockchain"
-- url: "https://huobi-ventures.medium.com/understanding-the-full-picture-of-mev-4151160b7583"
-  src: Huobi Ventures
-  title: Understanding the Full Picture of MEV
