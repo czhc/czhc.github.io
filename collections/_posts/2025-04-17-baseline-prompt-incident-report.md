@@ -1,5 +1,5 @@
 ---
-title: "Baseline Prompt for generating Incident Reports"
+title: "Baseline Prompt for Generating Incident Reports"
 description: "Using AI to create precise and actionable incident reports for your engineering team"
 categories: [sre]
 tags: [site-reliability, service-outages, incident-reports, aiops]
@@ -22,10 +22,10 @@ A good incident report should:
 
 A friend and mentor (s/o Wilson) recently shared a useful insight: while AI is powerful, it's often less accessible to ESL (English as a Second Language) users because it sometimes requires the right keywords to produce quality results.
 
-I hope this will benefit some ESL teams, small teams, or just anyone who needs a point of reference.
+I hope this benefits some ESL teams, small teams, or anyone who needs a point of reference.
 
 ---
-### Baseline Prompt for generating Incident Reports
+### Baseline Prompt for Generating Incident Reports
 
 ```
 ### INSTRUCTION
@@ -37,16 +37,16 @@ Follow this structure enclosed in "~~~~~" strictly. Start each item as a Title.
 ~~~~~
 * Title: [YYYYMMDD] [15 word description of the incident cause and impact]
 * Summary: A succinct executive summary of what went wrong and whether the issue is recovered. Keep this under 30 words. 
-* Impact: Any measurable indicators of the incident including error %, affected data groups and rows, or service-level indicators.. Prioritize Service Level Objects (Uptime, Apdex, Error %) or operational metrics (Mean Time to Resolve, Lead Time Change, Build Time) before other indicators. Prioritize output metrics without providing an exhaustive list of metrics discussed. Focus only on measurable indicators. 
+* Impact: Any measurable indicators of the incident including error %, affected data groups and rows, or service-level indicators. Prioritize Service Level Objectives (Uptime, Apdex, Error %) or operational metrics (Mean Time to Resolve, Lead Time Change, Build Time) before other indicators. Prioritize output metrics without providing an exhaustive list of metrics discussed. Focus only on measurable indicators. 
 - Timeline: A bullet list of events, formatted as: [HH:mm]: [@person] performed [@action].
 - For cross-day events, use [MM/DD HH:mm]
 - Use active voice, e.g., "@alice restarted service X"
 - Avoid system descriptions like “System triggered alarm”
 * Root cause: Technical explanation of what went wrong.
-* Resolution: A technical explanation of what action was taken and how the patch was verified. Use a bullet list of changes. Use one line for each change. Specify: [action taken] [what was recovered] [how is the patch confirmed]. Do not include code snippets here. Link to them in Appendix. 
+* Resolution: A technical explanation of what action was taken and how the patch was verified. Use a bullet list of changes. Use one line for each change. Specify: [action taken] [what was recovered] [how was the patch confirmed]. Do not include code snippets here. Link to them in Appendix. 
 * Discussion: Specific topics or talking points that include new information, unresolved questions about the root cause, observability, or resolution, etc., that warrant separate or further discussion. Format your points as a numbered list. Use a Q&A format only. Do not print the topic or summary heading before each Q&A.
 * Next Steps: A list of specific follow-ups, including patch work or open questions, due within 30 days of the incident.
-* Appendix: A bullet list of external references, including third-party source material, documentation, internal and external links and conversations. 
+* Appendix: A bullet list of external references, including third-party source material, documentation, internal and external links, and conversations.
 * Drafted by: GPT model and Reviewed By (leave as TBD).
 ~~~~~
 
