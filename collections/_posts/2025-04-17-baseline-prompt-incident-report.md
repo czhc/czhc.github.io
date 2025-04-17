@@ -20,7 +20,7 @@ A good incident report should:
 
 ### Story Time
 
-A friend and mentor (s/o Wilson) recently shared a useful insight: while AI is powerful, it's often less accessible to ESL (English as a Second Language) users because it relies on the right operational keywords to produce quality results.
+A friend and mentor (s/o Wilson) recently shared a useful insight: while AI is powerful, it's often less accessible to ESL (English as a Second Language) users because it relies on precise keywords to produce quality results.
 So I'm sharing some of the prompts I use personally to benefit ESL teams, small teams, or just anyone who needs a point of reference.
 
 ---
