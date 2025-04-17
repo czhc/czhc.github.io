@@ -9,7 +9,7 @@ published: true
 
 ### Your engineering team hates service outages, but they probably hate writing Incident Reports even more. 
 
-An incident might last for minutes, hours, or even days. Writing a meaningful report afterward? That’s an additional tax on the process. But it's a necessary task.
+An incident might last for minutes, hours, or even days. Writing a meaningful report afterward? That’s an additional tax on the process. But it is a necessary task.
 
 
 A good incident report should:
