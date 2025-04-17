@@ -21,7 +21,8 @@ A good incident report should:
 ### Story Time
 
 A friend and mentor (s/o Wilson) recently shared a useful insight: while AI is powerful, it's often less accessible to ESL (English as a Second Language) users because it sometimes requires the right keywords to produce quality results.
-So I hope this will benefit some ESL teams, small teams, or just anyone who needs a point of reference.
+
+I hope this will benefit some ESL teams, small teams, or just anyone who needs a point of reference.
 
 ---
 ### Baseline Prompt for generating Incident Reports
