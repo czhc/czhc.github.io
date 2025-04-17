@@ -76,4 +76,4 @@ I'll update newer versions in the future here: [[czhc/shared-prompts]](https://g
 4. There are no silver bullets in integrating AI. Review your output. Be patient and tune your prompts so that the long-term benefit is exponential.
 
 
-Let me know what you think! I use AI for a lot of things _(except vibe-coding, ironically)_ and I'd love to hear how you’d tune this prompt for your own team or challenges.
+Let me know what you think! I use AI for a lot of things _(except vibe-coding, ironically)_ and I'd love to hear how you’d tune this prompt or prompt differently.
