@@ -4,7 +4,7 @@ description: "Using AI to create precise and actionable incident reports for you
 categories: [sre]
 tags: [site-reliability, service-outages]
 last_modified_at: "2025-04-17"
-published: false
+published: true
 ---
 
 ### Your engineering team hates service outages, but they probably hate writing Incident Reports even more. 
