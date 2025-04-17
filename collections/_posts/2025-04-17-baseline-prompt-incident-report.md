@@ -72,7 +72,7 @@ I'll update newer versions in the future here: [[czhc/shared-prompts]](https://g
 
 1. Prompting, like coding, is an art. It’s contextual and subjective. This is just a baseline.
 2. Prompting should be collaborative. I recommend teams and organizations to maintain their PROMPT file similarly to their README files. **Collaborate, test, version-control, and fork as needed.**
-3. Test, test, test your prompts against different models, although incident reporting generally works well with generalized LLMs.
+3. Test, test, test your prompts against different models, although summarizers generally work well with generalized LLMs.
 4. There are no silver bullets in integrating AI. Review your output. Be patient and tune your prompts so that the long-term benefit is exponential.
 
 
