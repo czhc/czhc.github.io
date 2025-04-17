@@ -2,7 +2,7 @@
 title: "Baseline Prompt for generating Incident Reports"
 description: "Using AI to create precise and actionable incident reports for your engineering team"
 categories: [sre]
-tags: [site-reliability, service-outages]
+tags: [site-reliability, service-outages, incident-reports, aiops]
 last_modified_at: "2025-04-17"
 published: true
 ---
