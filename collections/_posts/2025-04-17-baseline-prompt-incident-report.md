@@ -49,10 +49,6 @@ Follow this structure enclosed in "~~~~~" strictly. Start each item as a Title.
 * Drafted by: GPT model and Reviewed By (leave as TBD).
 ~~~~~
 
-----
-
-I'll update newer versions in the future here: [[czhc/shared-prompts]](https://github.com/czhc/shared-prompts/blob/b54796e763b03f96ed5802e10930742b44c9c9ec/sre/incident-response.txt)
-
 ### ADDITIONAL INFORMATION 
 Refer to the attached conversations, logs, or files. Extract only relevant information—e.g., names, services, metrics, root causes. Condense verbose threads into key facts.
 
@@ -67,6 +63,9 @@ Before drafting, confirm with the user:
 Do not generate output until confirmation is received.
 ```
 
+----
+
+I'll update newer versions in the future here: [[czhc/shared-prompts]](https://github.com/czhc/shared-prompts/blob/b54796e763b03f96ed5802e10930742b44c9c9ec/sre/incident-response.txt)
 
 ### Disclaimers
 
