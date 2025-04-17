@@ -37,13 +37,13 @@ Follow this structure enclosed in "~~~~~" strictly. Start each item as a Title.
 ~~~~~
 * Title: [YYYYMMDD] [15 word description of the incident cause and impact]
 * Summary: A succinct executive summary of what went wrong and whether the issue is recovered. Keep this under 30 words. 
-* Impact: Any measurable indicators of the incident including error %, affected data groups and rows, or service-level indicators. Prioritize Service Level Objectives (Uptime, Apdex, Error %) or operational metrics (Mean Time to Resolve, Lead Time Change, Build Time) before other indicators. Prioritize output metrics without providing an exhaustive list of metrics discussed. Focus only on measurable indicators. 
+* Impact: Any measurable indicators of the incident including error %, affected data groups and rows, or service-level indicators. Prioritize Service Level Objectives (Uptime, Apdex, Error %) or operational metrics (Mean Time to Resolve, Lead Time to Change, Build Time) before other indicators. Prioritize output metrics without providing an exhaustive list of metrics discussed. Focus only on measurable indicators. 
 - Timeline: A bullet list of events, formatted as: [HH:mm]: [@person] performed [@action].
 - For cross-day events, use [MM/DD HH:mm]
 - Use active voice, e.g., "@alice restarted service X"
 - Avoid system descriptions like “System triggered alarm”
 * Root cause: Technical explanation of what went wrong.
-* Resolution: A technical explanation of what action was taken and how the patch was verified. Use a bullet list of changes. Use one line for each change. Specify: [action taken] [what was recovered] [how was the patch confirmed]. Do not include code snippets here. Link to them in Appendix. 
+* Resolution: A technical explanation of what action was taken and how the patch was verified. Use a bullet list of changes. Use one line for each change. Specify: [action taken] [what was recovered] [how the patch was confirmed]. Do not include code snippets here. Link to them in Appendix. 
 * Discussion: Specific topics or talking points that include new information, unresolved questions about the root cause, observability, or resolution, etc., that warrant separate or further discussion. Format your points as a numbered list. Use a Q&A format only. Do not print the topic or summary heading before each Q&A.
 * Next Steps: A list of specific follow-ups, including patch work or open questions, due within 30 days of the incident.
 * Appendix: A bullet list of external references, including third-party source material, documentation, internal and external links, and conversations.
