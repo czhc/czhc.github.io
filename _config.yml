@@ -5,6 +5,7 @@ plugins:
   - jemoji
 title: czhc.dev
 description: beta
+repository: czhc/czhc.github.io
 google_analytics:
 ga4: G-B1138DWXEB
 sass:
