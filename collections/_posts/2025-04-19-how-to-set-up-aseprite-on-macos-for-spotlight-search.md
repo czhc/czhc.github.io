@@ -1,9 +1,9 @@
 ---
 title: How to Set Up Aseprite (or any custom binary) on macOS for Spotlight Search
 description: Enhance your workflow by making Aseprite instantly accessible without the need for terminal commands.
-categories: [aseprite] 
+categories: [game] 
 tags: [aseprite macOS spotlight devtools productivity tutorials]
-last_modified_at: "2025-04-20"
+last_modified_at: "2025-04-19"
 published: true
 ---
 
