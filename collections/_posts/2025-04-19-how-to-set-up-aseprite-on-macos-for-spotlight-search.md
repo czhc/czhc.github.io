@@ -34,20 +34,20 @@ If you already have a working symlink, you can skip this step.
 
    In your [Terminal app](https://support.apple.com/en-my/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#open-terminal), create a symbolic link pointing to the `aseprite` binary (assuming your Aseprite binary is located at `/path/to/aseprite/build/bin/aseprite`):
 
-        ```bash
-        sudo ln -s /path/to/aseprite/build/bin/aseprite /usr/local/bin/aseprite
-        ```
+    ```bash
+    sudo ln -s /path/to/aseprite/build/bin/aseprite /usr/local/bin/aseprite
+    ```
 
-   Replace /path/to/aseprite/build/bin/aseprite with the actual path where Aseprite is located. This command creates a symlink in /usr/local/bin, making Aseprite available system-wide.
+   Replace `/path/to/aseprite/build/bin/aseprite` with the actual path where Aseprite is located. This command creates a symlink in `/usr/local/bin`, making Aseprite available system-wide.
 
 
 2. **Test the symlink:**
 
     After creating the symlink, verify that it works by typing the following in the terminal:
 
-        ```bash
-            aseprite
-        ```
+    ```bash
+    aseprite
+    ```
 
 
 ## Make Aseprite Searchable in Spotlight
@@ -59,99 +59,110 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
     Create the app bundle structure
 
     ```bash
-        mkdir -p ~/Applications/Aseprite.app/Contents/MacOS
+    mkdir -p ~/Applications/Aseprite.app/Contents/MacOS
     ```
 
 
 2. **Create the executable script:**
 
-    In the `~/Applications/Aseprite.app/Contents/MacOS` directory, create a new shell script called Aseprite:
+    In the `~/Applications/Aseprite.app/Contents/MacOS` directory, create a new shell script called Aseprite with `nano` or your preferred text editor.
 
-        ```bash
-            nano ~/Applications/Aseprite.app/Contents/MacOS/Aseprite
-        ```
+    ```bash
+    nano ~/Applications/Aseprite.app/Contents/MacOS/Aseprite
+    ```
 
     Paste the following content into the file:
 
-        ```bash
-            #!/bin/bash
-            /usr/local/bin/aseprite "$@"
-        ```
+    ```bash
+    #!/bin/bash
+    /usr/local/bin/aseprite "$@"
+    ```
 
     Save and exit.
 
 
 3. **Make the script executable:**
 
-
     ```bash
-        chmod +x ~/Applications/Aseprite.app/Contents/MacOS/Aseprite
+    chmod +x ~/Applications/Aseprite.app/Contents/MacOS/Aseprite
     ```
 
 4. **Create the Info.plist file:**
 
     In the `~/Applications/Aseprite.app/Contents` directory, create the `Info.plist` file:
 
-        ```bash
-            nano ~/Applications/Aseprite.app/Contents/Info.plist
-        ```
+    ```bash
+    nano ~/Applications/Aseprite.app/Contents/Info.plist
+    ```
 
     Paste the following XML content into the file:
 
 
-        ```bash
-            <?xml version="1.0" encoding="UTF-8"?>
-            <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-            "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-            <plist version="1.0">
-            <dict>
-                <key>CFBundleName</key>
-                <string>Aseprite</string>
-                <key>CFBundleIdentifier</key>
-                <string>com.yourname.aseprite</string>
-                <key>CFBundleVersion</key>
-                <string>1.0</string>
-                <key>CFBundleExecutable</key>
-                <string>Aseprite</string>
-                <key>CFBundlePackageType</key>
-                <string>APPL</string>
-            </dict>
-            </plist>
-        ```
+    ```bash
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>CFBundleName</key>
+        <string>Aseprite</string>
+        <key>CFBundleIdentifier</key>
+        <string>com.yourname.aseprite</string>
+        <key>CFBundleVersion</key>
+        <string>1.0</string>
+        <key>CFBundleExecutable</key>
+        <string>Aseprite</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+    </dict>
+    </plist>
+    ```
 
-5. **Optional: Add an Icon:**
-
-    If you have an .icns file for Aseprite, place it in the `~/Applications/Aseprite.app/Contents/Resources` directory. You can download the Aseprite macOS Big Sur icon from the [Aseprite Community Forum](https://community.aseprite.org/t/download-aseprite-macos-big-sur-icon/7431). Then, in your Info.plist file, add this line 
-
-        ```bash
-        ...
-            <key>CFBundleIconFile</key>
-            <string>Aseprite.icns</string>
-        </dict>
-        </plist>
-        ```
-
-6. **Force Spotlight to Re-index the app (if necessary)**
+5. **Force Spotlight to Re-index the app (if necessary)**
 
     In the Terminal, execute this: 
 
-        ```bash
-            mdimport ~/Applications/Aseprite.app
-        ```
+    ```bash
+    mdimport ~/Applications/Aseprite.app
+    ```
 
     Now bring up Spotlight and search for Aseprite. You should see it there: 
 
-    ![Aseprite Search](/assets/img/posts/aseprite-search.png)
+    ![Aseprite Search](/assets/img/posts/2025-04-19-aseprite/search.png)
+
+
+6. **Optional: Add an Icon:**
+
+
+    If you want the Aseprite to have its own icon in Spotlight search, you can first download the Aseprite macOS Big Sur icon from the [Aseprite Community Forum](https://community.aseprite.org/t/download-aseprite-macos-big-sur-icon/7431). Place it in the `~/Applications/Aseprite.app/Contents/Resources/` directory. Then, in your Info.plist file, add this line at the end of the `<dict>...</dict>` tag.
+
+    ```bash
+    ...
+        <key>CFBundleIconFile</key>
+        <string>Aseprite.icns</string>
+    </dict>
+    </plist>
+    ```
+
+    If the icon does appear correctly in your Dock, you can clear the cache and restart the Dock with: 
+
+    ```bash
+    sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
+    sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
+    killall Dock
+    ```
+
+    Ta-da! :tada: 
+
+    ![Aseprite Dock](/assets/img/posts/2025-04-19-aseprite/dock.png)
 
 
 
 ## Conclusion
 
-With these steps, you’ve successfully made Aseprite:
+With these steps, you’ve successfully made Aseprite searchable via Spotlight, making it easy to launch without needing to open a terminal window. You can even right-click and **Keep in Dock** so you can launch it directly from your Dock.
 
-Searchable via Spotlight, making it easy to launch without needing to open a terminal window.
 
-Wrapped in a .app bundle, which is the standard macOS way of packaging applications.
 
 
 
