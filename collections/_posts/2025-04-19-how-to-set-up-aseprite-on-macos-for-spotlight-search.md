@@ -15,20 +15,14 @@ Aseprite is a popular pixel art tool, and if you're using it on macOS, you may w
 **Disclaimer:** _This is a general guide to make custom binaries or programs available via OS X Spotlight. I just wrote this up for Aseprite to help the artists who may be using it._
 
 
-## Prerequisites
+---
 
-Make sure you have:
-- **Aseprite built** and running on your macOS (follow the instructions from the [official installation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#macos-dependencies)).
-- **Homebrew** or direct access to the Aseprite binary.
-- A working **symlink** to Aseprite located in `/usr/local/bin/aseprite`.
-
-If you followed the original instructions for installing Aseprite, your binary should be located in `/path/to/aseprite/build/bin/aseprite`. If you used a different installation method such as downloading the .zip file, replace `/path/to/aseprite` with the actual directory where you built Aseprite. 
-
+**Prerequisites**: Make sure you have **Aseprite built** and running on your macOS (follow the instructions from the [official installation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#macos-dependencies)).
 
 
 ## Create a Symlink for Aseprite
 
-Before proceeding, you need to make Aseprite available globally by creating a symbolic link to the executable in `/usr/local/bin`.
+First, you need to make Aseprite available globally by creating a symbolic link to the executable in `/usr/local/bin`.
 
 If you already have a working symlink, you can skip this step.
 
