@@ -114,6 +114,8 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
         <string>Aseprite</string>
         <key>CFBundlePackageType</key>
         <string>APPL</string>
+        <key>CFBundleIconFile</key>
+        <string>Aseprite.icns</string>
     </dict>
     </plist>
     ```
@@ -128,7 +130,7 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
 
     Now bring up Spotlight and search for Aseprite. You should see it there: 
 
-    ![Aseprite Search](/assets/img/posts/2025-04-19-aseprite/search.png)
+    ![Aseprite Search](/assets/img/posts/2025-04-19-aseprite/search-1.png)
 
 
 6. **Optional: Add an Icon:**
@@ -143,6 +145,12 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
     </dict>
     </plist>
     ```
+
+    Bring up Spotlight again and search for Aseprite. You should now see the icon: 
+
+    ![Aseprite Search](/assets/img/posts/2025-04-19-aseprite/search-2.png)
+
+
 
     If the icon does appear correctly in your Dock, you can clear the cache and restart the Dock with: 
 
