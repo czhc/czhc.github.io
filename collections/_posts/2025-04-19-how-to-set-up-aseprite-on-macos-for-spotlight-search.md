@@ -9,8 +9,10 @@ published: true
 
 Aseprite is a popular pixel art tool, and if you're using it on macOS, you may want to make it easily accessible via Spotlight search. While the installation instructions for Aseprite on macOS are already available in the official [Aseprite GitHub repository](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#macos-dependencies), this guide will show you how to make Aseprite searchable in Spotlight and easily launchable from the desktop. It's a nice-to-have addition to streamline your workflow.
 
-**Disclaimer:** _This is a general guide to make custom binaries or programs available via OS X Spotlight. I just wrote this up for Aseprite to help the artists who may be using it._
+![Aseprite GIF](/assets/img/posts/2025-04-19-aseprite/aseprite.gif)
 
+
+**Disclaimer:** _This is a general guide to make custom binaries or programs available via OS X Spotlight. I just wrote this up for Aseprite to help the artists who may be using it._
 
 
 ## Prerequisites
