@@ -47,7 +47,7 @@ If you already have a working symlink, you can skip this step.
     ```bash
     sudo chmod +x /usr/local/bin/aseprite
     ```
-    
+
 2. **Test the symlink:**
 
     After creating the symlink, verify that it works by typing the following in the terminal:
@@ -121,8 +121,6 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
         <string>Aseprite</string>
         <key>CFBundlePackageType</key>
         <string>APPL</string>
-        <key>CFBundleIconFile</key>
-        <string>Aseprite.icns</string>
     </dict>
     </plist>
     ```
