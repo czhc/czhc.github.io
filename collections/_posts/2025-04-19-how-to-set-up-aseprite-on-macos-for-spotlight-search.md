@@ -26,17 +26,28 @@ First, you need to make Aseprite available globally by creating a symbolic link 
 
 If you already have a working symlink, you can skip this step.
 
-1. **Create a symlink for the Aseprite binary**:
+1. **Create a wrapper script for the Aseprite binary:**
 
-   In your [Terminal app](https://support.apple.com/en-my/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#open-terminal), create a symbolic link pointing to the `aseprite` binary (assuming your Aseprite binary is located at `/path/to/aseprite/build/bin/aseprite`):
+    Create a new file at /usr/local/bin/aseprite with `nano` or your preferred text editor:
 
     ```bash
-    sudo ln -s /path/to/aseprite/build/bin/aseprite /usr/local/bin/aseprite
+    sudo nano /usr/local/bin/aseprite
     ```
 
-   Replace `/path/to/aseprite/build/bin/aseprite` with the actual path where Aseprite is located. This command creates a symlink in `/usr/local/bin`, making Aseprite available system-wide.
+    Paste the following into the file content. Replace `/path/to/aseprite/build/bin` with the actual path to your Aseprite build directory. 
 
+    ```bash
+    #!/bin/bash
+    cd /path/to/aseprite/build/bin
+    ./aseprite "$@"
+    ```
 
+    Then make the script executable:
+
+    ```bash
+    sudo chmod +x /usr/local/bin/aseprite
+    ```
+    
 2. **Test the symlink:**
 
     After creating the symlink, verify that it works by typing the following in the terminal:
@@ -61,7 +72,7 @@ To make Aseprite easily accessible from Spotlight, we need to wrap it in an .app
 
 2. **Create the executable script:**
 
-    In the `~/Applications/Aseprite.app/Contents/MacOS` directory, create a new shell script called Aseprite with `nano` or your preferred text editor.
+    In the `~/Applications/Aseprite.app/Contents/MacOS` directory, create a new shell script called Aseprite.
 
     ```bash
     nano ~/Applications/Aseprite.app/Contents/MacOS/Aseprite
