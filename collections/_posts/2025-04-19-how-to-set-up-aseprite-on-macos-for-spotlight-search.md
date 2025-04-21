@@ -17,7 +17,8 @@ Aseprite is a popular pixel art tool, and if you're using it on macOS, you may w
 
 ---
 
-**Prerequisites**: Make sure you have **Aseprite built** and running on your macOS. You can use the instructions from the [official installation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#macos-dependencies)) or this blog for [Apple Silicon Mac specifically](https://emaddehnavi.medium.com/how-to-build-aseprite-from-source-in-apple-silicon-mac-45435f470ac2?utm_source=czhc.dev).
+**Prerequisites**: Make sure you have **Aseprite built** and running on your macOS. You can use the instructions from the [official installation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md#macos-dependencies)) or this blog for [Apple Silicon Mac specifically (Emad Dehnavi)
+](https://emaddehnavi.medium.com/how-to-build-aseprite-from-source-in-apple-silicon-mac-45435f470ac2?utm_source=czhc.dev).
 
 
 ## Create a Symlink for Aseprite
