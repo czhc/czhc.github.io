@@ -1,3 +1,6 @@
+- url: "https://www.amazon.com/Principles-Life-Work-Ray-Dalio-ebook/dp/B071CTK28D"
+  src: Ray Dahlio
+  title: "Principles"
 - url: "https://github.com/openai/openai-cookbook/blob/main/examples/gpt4-1_prompting_guide.ipynb"
   src: OpenAI
   title: "GPT 4.1 Prompting Guide"
